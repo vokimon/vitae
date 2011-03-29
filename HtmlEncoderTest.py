@@ -16,7 +16,12 @@ class HtmlEncoderTest(unittest.TestCase) :
 			u"hola",
 			u"hola")
 
-	def test_escapeString_unicodeStringWithTranscodedChars(self) :
+	def test_escapeString_localString(self) :
+		self.helper_test_escapeString(
+			"hola",
+			u"hola")
+
+	def test_escapeString_localStringWithUnicode(self) :
 		self.helper_test_escapeString(
 			"€¢ÇÑçñ,áéíóúàèìòùâêîôûäëïöüÀÈÌÒÙÁÉÍÓÚÂÊÎÔÛÄËÏÖÜ",
 			u"€¢ÇÑçñ,áéíóúàèìòùâêîôûäëïöüÀÈÌÒÙÁÉÍÓÚÂÊÎÔÛÄËÏÖÜ")
@@ -25,11 +30,6 @@ class HtmlEncoderTest(unittest.TestCase) :
 		self.helper_test_escapeString(
 			u"€¢ÇÑçñ,áéíóúàèìòùâêîôûäëïöüÀÈÌÒÙÁÉÍÓÚÂÊÎÔÛÄËÏÖÜ",
 			u"€¢ÇÑçñ,áéíóúàèìòùâêîôûäëïöüÀÈÌÒÙÁÉÍÓÚÂÊÎÔÛÄËÏÖÜ")
-
-	def test_escapeString_localString(self) :
-		self.helper_test_escapeString(
-			"hola",
-			u"hola")
 
 	def test_escapeString_gt(self) :
 		self.helper_test_escapeString(
@@ -69,7 +69,7 @@ class HtmlEncoderTest(unittest.TestCase) :
 	def test_escapeSeq_turnsUnicode(self) :
 		self.helper_test_escapeSeq(
 					["value1","value2"],
-					["value1","value2"],
+					[u"value1",u"value2"],
 				)
 
 	def test_escapeSeq_turnsEscapesSpecial(self) :

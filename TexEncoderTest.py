@@ -6,9 +6,11 @@ from vitae import TexEncoder, ConstrainedDict
 
 class TexEncoderTest(unittest.TestCase) :
 	
-	def helper_test_escapeString(self, input, output) :
-		encoded = TexEncoder().escapeString(input)
-		self.assertEquals(output, encoded)
+	def helper_test_escapeString(self, input, expected) :
+		result = TexEncoder().escapeString(input)
+		self.assertEquals(expected.__class__, result.__class__)
+		self.assertEquals(expected, result)
+
 	def test_escapeString_unicodeString(self) :
 		self.helper_test_escapeString(
 			u"hola",
@@ -18,6 +20,16 @@ class TexEncoderTest(unittest.TestCase) :
 		self.helper_test_escapeString(
 			"hola",
 			u"hola")
+
+	def test_escapeString_localStringWithUnicode(self) :
+		self.helper_test_escapeString(
+			"€¢ÇÑçñ,áéíóúàèìòùâêîôûäëïöüÀÈÌÒÙÁÉÍÓÚÂÊÎÔÛÄËÏÖÜ",
+			u"€¢ÇÑçñ,áéíóúàèìòùâêîôûäëïöüÀÈÌÒÙÁÉÍÓÚÂÊÎÔÛÄËÏÖÜ")
+
+	def test_escapeString_unicodeStringWithUtfChars(self) :
+		self.helper_test_escapeString(
+			u"€¢ÇÑçñ,áéíóúàèìòùâêîôûäëïöüÀÈÌÒÙÁÉÍÓÚÂÊÎÔÛÄËÏÖÜ",
+			u"€¢ÇÑçñ,áéíóúàèìòùâêîôûäëïöüÀÈÌÒÙÁÉÍÓÚÂÊÎÔÛÄËÏÖÜ")
 
 	def test_escapeString_underline(self) :
 		self.helper_test_escapeString(
@@ -67,7 +79,7 @@ class TexEncoderTest(unittest.TestCase) :
 	def test_escapeSeq_turnsUnicode(self) :
 		self.helper_test_escapeSeq(
 					["value1","value2"],
-					["value1","value2"],
+					[u"value1",u"value2"],
 				)
 
 	def test_escapeSeq_turnsEscapesSpecial(self) :
