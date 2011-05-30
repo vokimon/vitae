@@ -206,6 +206,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: justify;
+	background-color: #fff;
 }
 h2 {
 	color: #834;
