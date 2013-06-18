@@ -232,11 +232,20 @@ Some technologies I recently hacked with are Qt, C++, Python, Django, PHP, SCons
 		],
 	publications = [
 		Publication(
+			author = "Jun Wang, Xavier Amatriain, David Garcia Garzón, Jinlin Wang",
+			title ="Combining multi-level audio descriptors via web identification and aggregation",
+			year = "2009",
+			notes = "Presented at World Wide Web Conference'09, Developers Track, Madrid",
+#			abstract = """In this paper, we present the CLAM Aggregator, a tool included in the CLAM framework that allows combining multi-level audio descriptors. The tool includes a reliable method to identify the user’s local music collection using open data resources and allows users to configure, aggregate and edit music information ranging from low-level descriptors to any metadata from the semantic Web. All these steps are designed in a flexible, graphical, and user-adaptive way.""",
+#			url = "http://xavier.amatriain.net/pubs/wang_www09.pdf",
+		),
+		Publication(
 			author = "D. Garcia, D. Arteaga,  J.  Usher, T. Mateos",
 			title ="Determining a room geometry from its impulse response",
 			year = "2010",
 			notes = "Presented at Internoise10, Lisbon, June 2010.",
 #			abstract = """This paper reports on the development of a system to characterize the geometric properties of a space from an acoustic impulse response measured within it. This can be thought of as the inverse problem to the common practice of obtaining impulse responses from either a real-world or a virtual space. Starting from a measured or synthesized impulse response in an original scene, the method described here defines a space of possible scenes and a distance measure on it, and discusses a strategy to select a scene from this space, which is perceptually as close as possible to the original one. Potential applications of this novel method include audio forensics, re-equalization and re-mixing of music and audio.""",
+#			url = "http://www.20203dmedia.eu/materials/papers/SCENE_GEOMETRY.pdf",
 		),
 		Publication(
 			author= "Bailer, W. Arumi, P. Mateos, T. Garriga, A. Durany, J. and Garcia, D.",
@@ -267,11 +276,10 @@ Some technologies I recently hacked with are Qt, C++, Python, Django, PHP, SCons
 #			video = "http://lac.linuxaudio.org/2009/cdm/Thursday/05_Arumi/index.html",
 		),
 		Publication(
-			author = u'García, D. Arumí, P. Amatriain, X.',
+			author = u'Arumí, P. Amatriain, X. García, D.',
 			year = '2008',
 			title = 'A Framework for Efficient and Rapid Development of Cross-platform Audio Applications',
-			notes = 'ACM Multimedia Systems Journal (acepted but still unpublished)',
-			# TODO: publication date
+			notes = 'ACM Multimedia Systems Journal; 14(1) June 2008',
 			),
 		Publication(
 			author = u'García, D. Arumí, P. Amatriain, X.',
@@ -370,9 +378,10 @@ Some technologies I recently hacked with are Qt, C++, Python, Django, PHP, SCons
 				"""processing algorithms, quality assurance...""",
 			),
 		Work(
-			title = "My technical web page",
-			url = "http://www.dtic.upf.edu/~dgarcia/Codders",
+			title = "My technical blog and web page",
+			url = "http://canvoki.net/coder",
 			description =
+				"""Daily discussion on technical stuff I work on."""+
 				"""My technical web page contains some tutorials and """+
 				"""several minor projects not listed here including """+
 				"""an SConstruct tool to support Qt4, """+
@@ -381,18 +390,17 @@ Some technologies I recently hacked with are Qt, C++, Python, Django, PHP, SCons
 				"",
 			),
 		Work(
-			title = "My technical blog",
-			url = "http://canvoki.net/coder",
-			description =
-				"""Daily discussion on technical stuff I work on."""+
-				"",
-			),
-		Work(
 			title = "Course materials",
 			url = "http://canvoki.net/docencia.html",
 			description =
 				"""A compilation of most of the material elaborated for the courses I teach."""+
 				"",
+			),
+		Work(
+			title = "Personal GitHub page",
+			url = "http://github.com/vokimon",
+			description =
+				"""Several projects I maintain in GitHub and public contributions to other projects hosted there.""",
 			),
 		Work(
 			title = 'WiKo (The wiki compiler)',
