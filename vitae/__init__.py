@@ -52,8 +52,9 @@ class TexEncoder(HtmlEncoder) :
 
 class ConstrainedDict(dict) :
 	"""
-	A constrained dict is a dictionary like object whose keys may be constrained
-	given a list of mandatory keys and a list of optional keys with default values.
+	A constrained dict is a dictionary like object whose keys
+	may be constrained given a list of mandatory keys
+	and a list of optional keys with default values.
 	"""
 	class UnsupportedParameter(Exception) :
 		def __init__(self, context, parameterName) :
@@ -67,7 +68,10 @@ class ConstrainedDict(dict) :
 			self._parameterName = parameterName
 			self._context = context
 		def __str__(self) :
-			return "Missing required parameter '%s' in '%s'"%(self._parameterName, self._context)
+			return "Missing required parameter '%s' in '%s'"%(
+				self._parameterName,
+				self._context,
+				)
 
 	def __init__(self,  params, requiredFields=[], defaultValues={}) :
 		self._forceMustHaveParameters(params, requiredFields)
@@ -137,7 +141,7 @@ class Work(ConstrainedDict) :
 		)
 
 def htmlPosition(position) :
-	return """
+	return u"""
 <dt><span class='positionPeriod'>[%(start)s - %(end)s]</span></dt>
 <dd><span class='positionTitle'>%(title)s</span> at
 <span class='positionCompany'>%(company)s</span>.<br />
@@ -145,7 +149,7 @@ def htmlPosition(position) :
 """%position
 
 def htmlPublication(publication) :
-	return """
+	return u"""
 <p><span class='pubAuthor'>%(author)s</span> %(year)s.<br />
 <span class='pubTitle'>"%(title)s"</span><br />
 %(notes)s
@@ -153,7 +157,7 @@ def htmlPublication(publication) :
 """%publication
 
 def htmlEducation(education) :
-	return ("""
+	return (u"""
 <dt><span class='educatiionPeriod'>[%(start)s - %(end)s]</span></dt>
 <dd><span class='educationDegree'>%(degree)s</span> in
 <span class='educationField'>%(field)s</span> at
@@ -195,8 +199,8 @@ def htmlLanguage(language, level) :
 
 def htmlVitae(curriculum) :
 	curriculum = HtmlEncoder().escape(curriculum)
-	return """
-<?xml version='1.1' encoding='utf8' ?>
+	return u"""\
+<?xml version='1.1' encoding='utf-8' ?>
 <html>
 
 <head>
