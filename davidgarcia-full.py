@@ -234,14 +234,6 @@ Some technologies I recently hacked with are Qt, C++, Python, Django, PHP, SCons
 		],
 	publications = [
 		Publication(
-			author = "Jun Wang, Xavier Amatriain, David Garcia Garzón, Jinlin Wang",
-			title ="Combining multi-level audio descriptors via web identification and aggregation",
-			year = "2009",
-			notes = "Presented at World Wide Web Conference'09, Developers Track, Madrid",
-#			abstract = """In this paper, we present the CLAM Aggregator, a tool included in the CLAM framework that allows combining multi-level audio descriptors. The tool includes a reliable method to identify the user’s local music collection using open data resources and allows users to configure, aggregate and edit music information ranging from low-level descriptors to any metadata from the semantic Web. All these steps are designed in a flexible, graphical, and user-adaptive way.""",
-#			url = "http://xavier.amatriain.net/pubs/wang_www09.pdf",
-		),
-		Publication(
 			author = "D. Garcia, D. Arteaga,  J.  Usher, T. Mateos",
 			title ="Determining a room geometry from its impulse response",
 			year = "2010",
@@ -255,6 +247,14 @@ Some technologies I recently hacked with are Qt, C++, Python, Django, PHP, SCons
 			year = "2009",
 			notes = "5th European Conference on Visual Media Production, 2008.",
 #			abstract = """Abstract: In the production phase of digital cinema content it is important to allow the director not only to preview the final rendered scene early in the shooting process, but also to prehear the 5.1 surround and HRTF-based binaural versions, thus enabling visual and auditive artistic decisions to be taken at the shooting stage. In many cases camera tracking data is not available for all cameras on the set (e.g. handheld ones) and thus the motion of the camera needs to be estimated. In this paper we describe an approach for estimation of 3D camera motion and its use for real-time audio rendering.""",
+		),
+		Publication(
+			author = "Jun Wang, Xavier Amatriain, David Garcia Garzón, Jinlin Wang",
+			title ="Combining multi-level audio descriptors via web identification and aggregation",
+			year = "2009",
+			notes = "Presented at World Wide Web Conference'09, Developers Track, Madrid",
+#			abstract = """In this paper, we present the CLAM Aggregator, a tool included in the CLAM framework that allows combining multi-level audio descriptors. The tool includes a reliable method to identify the user’s local music collection using open data resources and allows users to configure, aggregate and edit music information ranging from low-level descriptors to any metadata from the semantic Web. All these steps are designed in a flexible, graphical, and user-adaptive way.""",
+#			url = "http://xavier.amatriain.net/pubs/wang_www09.pdf",
 		),
 		Publication(
 			author = "P. Arumi, D. Garcia, T. Mateos, A. Garriga and J. Durany.",
