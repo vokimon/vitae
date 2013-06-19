@@ -7,7 +7,7 @@ from vitae import Vitae, Position, Education, Publication, Work
 myVitae = Vitae(
 	firstName = 'David',
 	surname = u'García Garzón',
-	photo = 'http://canvoki.net/foto.jpg',
+	photo = 'http://canvoki.net/bichos-low.png',
 	profession = 'Researcher and Computer Engineer',
 	birthDate = '10th May 1975, Barcelona, Spain',
 	nationality = 'Spain',
@@ -37,23 +37,6 @@ Some technologies I recently hacked with are Qt, C++, Python, Django, PHP, SCons
 		),
 	positions = [
 		Position(
-			company = u'Barcelona Mèdia',
-			title = 'Researcher',
-			start = 'Jun 2007',
-			description =
-				"Design and develop real-time systems for 3D audio. "
-				"The system became the basis for a commercial start-up (ImmSound). "
-				"It was deployed in cinemas world wide, until Dolby decided to buy the technology. "
-				"My contributions include defining the processing architecture as well as the application, "
-				"algorithm transcription and optimization, and junior training. "
-				"",
-		),
-		Position(
-			company = 'BMAT, Barcelona Music and Audio Technologies',
-			title = 'Co-founder and partner',
-			start = 'Dec 2005',
-		),
-		Position(
 			company = 'Universitat Pompeu Fabra',
 			title = 'Professor',
 			start = 'Sep 2002',
@@ -72,6 +55,25 @@ Some technologies I recently hacked with are Qt, C++, Python, Django, PHP, SCons
 				"""CLAM has become a framework of reference in multimedia and audio. """+
 				"""It won the 2006 ACM Award to the Best Multimedia Open Source Software """+
 				"""and was a featured project for 2007 and 2008 editions of the Google Summer of Code.""",
+		),
+		Position(
+			company = u'Barcelona Mèdia',
+			title = 'Researcher',
+			start = 'Jun 2007',
+			end = 'Nov 2012',
+			description =
+				"Design and develop real-time systems for 3D audio. "
+				"The system became the basis for a commercial start-up (ImmSound). "
+				"It was deployed in cinemas world wide, until Dolby decided to buy the technology. "
+				"My contributions include defining the processing architecture as well as the application, "
+				"algorithm transcription and optimization, and junior training. "
+				"",
+		),
+		Position(
+			company = 'BMAT, Barcelona Music and Audio Technologies',
+			title = 'Co-founder and partner',
+			start = 'Dec 2005',
+			end = 'Dec 2009',
 		),
 		Position(
 			company = u'Fundació UPC',
