@@ -198,39 +198,49 @@ Some technologies I recently hacked with are Qt, C++, Python, Django, PHP, SCons
 	],
 	skills = [
 		('Programming Languages',
-			"""I have a deep knowledge on programming and scripting languages """+
-			"""such  as C++, Python, PHP, Smalltallk, Java and Bash. """),
+			"""I have a deep knowledge on programming and scripting languages """
+			"""such  as C++, Python, PHP, Smalltallk, Java and Bash. """
+		),
 		('Web Standards',
-			"""I've been working on XHTML, HTML 4.1, CSS 2.0, DOM (JavaScript), XML, XPath, XSD, XQuery... """+
-			"""I also have experience on building cross browser web pages."""),
+			"""I've been working on XHTML, HTML 4.1, CSS 2.0, DOM (JavaScript), XML, XPath, XSD, XQuery... """
+			"""I also have experience on building cross browser web pages."""
+		),
 		('Operating systems',
-			"""I've been working with several Linux flavors, mostly with Debian, SuSe, Fedora and Ubuntu. """+
-			"""I tend to forget anything I learnt about Windows, but I could manage to make it work when needed. """+
-			"""I just have very slight knowledge of MacOsX but the underlying FreeBSD."""),
+			"""I've been working with several Linux flavors, mostly with Debian, SuSe, Fedora and Ubuntu. """
+			"""I tend to forget anything I learnt about Windows, but I could manage to make it work when needed. """
+			"""I just have very slight knowledge of MacOsX but the underlying FreeBSD."""
+		),
 		('Networks',
-			"""I have experience programing network applications and web services (php, python, django) and setting up basic apache servers."""+
-			"""I have some experience on LAN administration and firewalls/routers configuration. """),
+			"""I have experience programing network applications and web services (php, python, django) and setting up basic apache servers. """
+			"""I have been messing with the Guifi.net project dealing with routers, wireless antennas, IP6 and qMp (mesh configurations). """
+		),
 		('Databases',
-			"""I am an experienced SQL programmer. """+
-			"""I have used API's such as ADOdb, DAO and ODBC. """+
-			"""I have experience administrating MySql databases. """+
-			"""I have theoretical knowledge on the internal implementation of distributed database managers. """),
+			"""I am an experienced SQL programmer. """
+			"""I have used API's such as ADOdb, DAO and ODBC. """
+			"""I have experience administrating MySql databases. """
+			"""I have theoretical knowledge on the internal implementation of distributed database managers. """
+		),
 		('Sound',
-			"""I've been involved on the development of an audio and music framework """+
-			"""involving advanced real-time signal processing and """+
-			"""multiplatform audio hardware programming. """+
-			"""I've got a lot of experience analyzing existing audio software to port, to enhance or to optimize it. """+
-			"""I have experience setting up MIDI networks. """+
-			"""I have a deep knowledge of the Linux audio infrastructure (ALSA, Jack...) """+
-			"""I have have experience programing plugins and hosts for different plugin platforms: Ladspa, Lv2, Vst, and AudioUnits. """),
+			"""I've been involved on the development of an audio and music framework """
+			"""involving advanced real-time signal processing and """
+			"""multiplatform audio hardware programming. """
+			"""I've got a lot of experience analyzing existing audio software to port, to enhance or to optimize it. """
+			"""I have experience setting up MIDI networks. """
+			"""I have a deep knowledge of the Linux audio infrastructure (ALSA, Jack...) """
+			"""I have have experience programing plugins and hosts for different plugin platforms: Ladspa, Lv2, Vst, and AudioUnits. """
+		),
 		('3D Programming',
 			"""I have experience programing the OpenGL API. """+
 			"""I experience on programming raster, shading and texturization routines. """+
 			"""I have some notions on modeling and animating scenes. """+
 			"""I have experience on modeling languages such as PovRay. """),
 		('2D Graphics',
-			"""I have experience using Gimp (PaintShop equivalent) and Inkscape (Freehand/Illustrator equivalent). """+
-			"""I used them for both artistic and professional purposes. """),
+			"""I have experience using Gimp (PaintShop equivalent) and Inkscape (Freehand/Illustrator equivalent). """
+			"""I used them for both artistic and professional purposes. """
+		),
+		('Mobile/Embedded',
+			"""I developed applications for Android using the Qt framework (C++ and QML). """
+		),
 		],
 	publications = [
 		Publication(
