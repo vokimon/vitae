@@ -97,7 +97,7 @@ Some technologies I recently hacked with are Qt, C++, Python, Django, PHP, SCons
 				"""Specialized in Free Software and Music Information Retrieval.""",
 		),
 		Position(
-			company = 'Electronic Engineering Department at Queen Mary Universtity of London',
+			company = 'Electronic Engineering Department at Queen Mary University of London',
 			title = 'Visitor Researcher',
 			start = 'Feb 2005',
 			end = 'Apr 2005',
@@ -126,7 +126,7 @@ Some technologies I recently hacked with are Qt, C++, Python, Django, PHP, SCons
 			end = 'Dec 1997',
 			description =
 				"""Working at client site, EDS Iberia, on the ticketing section: """+
-				"""Legacy code maintainance involving AIX, C, DB’s and """+
+				"""Legacy code maintenance involving AIX, C, DB’s and """+
 				"""ticket printer low level programming. """+
 				"""Quality control and assurance on a developing system involving Oracle technologies.""",
 		),
@@ -137,7 +137,7 @@ Some technologies I recently hacked with are Qt, C++, Python, Django, PHP, SCons
 			end = 'Jun 1997',
 			description =
 				"""Preparing written materials (a Smalltalk-80 manual). """+
-				"""Teaching departamental courses on Advanced C. """+
+				"""Teaching courses on Advanced C. """+
 				"""Teaching laboratory sessions of Programming I course. """+
 				"""Educational intensification on Programming II. """+
 				"""Adapting a Genetic Algorithms tool to solve permutation problems (TSP). """,
@@ -191,7 +191,7 @@ Some technologies I recently hacked with are Qt, C++, Python, Django, PHP, SCons
 		Education(
 			school = "Col·legi Llor (Sant Boi de Llobregat)",
 			degree = "BUP/COU (Bachelor)",
-			field = "Cientific/Sanitary",
+			field = "Scientific/Sanitary",
 			start = "1988",
 			end = "1993",
 		),
@@ -205,7 +205,7 @@ Some technologies I recently hacked with are Qt, C++, Python, Django, PHP, SCons
 			"""I also have experience on building cross browser web pages."""),
 		('Operating systems',
 			"""I've been working with several Linux flavors, mostly with Debian, SuSe, Fedora and Ubuntu. """+
-			"""I tend to forget anything i learnt about Windows, but i could manage to make it work when needed. """+
+			"""I tend to forget anything I learnt about Windows, but I could manage to make it work when needed. """+
 			"""I just have very slight knowledge of MacOsX but the underlying FreeBSD."""),
 		('Networks',
 			"""I have experience programing network applications and web services (php, python, django) and setting up basic apache servers."""+
