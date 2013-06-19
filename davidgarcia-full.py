@@ -454,8 +454,9 @@ Some technologies I recently hacked with are Qt, C++, Python, Django, PHP, SCons
 )
 
 import vitae, os, codecs
-codecs.open("output.html","w", encoding="utf8").write(myVitae.html())
-codecs.open("output.tex", "w", encoding="utf8").write(myVitae.tex())
-#os.system("pdflatex output")
+outputbase = os.path.splitext(__file__)[0]
+codecs.open("%s.html"%outputbase,"w", encoding="utf8").write(myVitae.html())
+codecs.open("%s.tex"%outputbase, "w", encoding="utf8").write(myVitae.tex())
+#os.system("pdflatex %s"%outputbase)
 
 
