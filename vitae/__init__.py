@@ -159,12 +159,12 @@ def htmlPublication(publication) :
 <span class='pubTitle'>"%(title)s"</span><br />
 %(notes)s
 """ + (
-"""<span class='pubUrl'><a target='_blank' href='%(url)s'>[Download]</a></span>"""
-			if publication.get('url',False) else "") + (
-"""<span class='pubSlides'><a target='_blank' href='%(slides)s'>[Slides]</a></span>"""
-			if publication.get('slides',False) else "") + (
-"""<span class='pubAbstract'>[Abstract]<div class='dropDown'>\n%(abstract)s</div></span>"""
-			if publication.get('abstract',False) else "") +
+"""<span class='pubUrl'><a target='_blank' href='%(url)s'>[Download]</a></span>
+""" if publication.get('url',False) else "") + (
+"""<span class='pubSlides'><a target='_blank' href='%(slides)s'>[Slides]</a></span>
+""" if publication.get('slides',False) else "") + (
+"""<span class='pubAbstract'>[Abstract]<div class='dropDown'>\n%(abstract)s</div></span>
+""" if publication.get('abstract',False) else "") +
 """
 </div>
 """)%publication
