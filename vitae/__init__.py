@@ -200,13 +200,16 @@ def htmlLanguage(language, level) :
 def htmlVitae(curriculum) :
 	curriculum = HtmlEncoder().escape(curriculum)
 	return u"""\
-<?xml version='1.1' encoding='utf-8' ?>
 <html>
-
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <style>
 body {
-	width: 6in;
+	color: black;
+	background-color: #fff;
+}
+.content {
+	width: 40em;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: justify;
@@ -251,23 +254,80 @@ a:link, a:visited, a:active {
 	text-decoration: none;
 	display: inline;
 	display: block;
-/*	width: 14em;*/
 	background: #ffe;
 	border: 1pt solid #aa8;
 	opacity: .8;
 	padding: 1ex;
-/*	position: absolute;*/
 }
 .vitaePhoto {
 	float: right;
 	width: 25%%;
 }
+.toc {
+	width: 10em;
+	display: none;
+	color: #555;
+	background: eee;
+	position: fixed;
+	left: 3em;
+	border: #ddd solid 1px;
+}
+@media only screen and (min-width: 70em) {
+.toc {
+	display: block;
+}
+}
+.toc ul {
+	padding: 1em;
+	margin: 0;
+	list-style-type: none;
+	list-style-position: inside;
+}
+.toc li a {
+	width: 100%%;
+}
+.toc li a:active {
+	color: red;
+}
+.toc li a:hover {
+	color: black;
+	background: #fca;
+	padding-left: 0.5em;
+	transition: background-color 0.5s;
+	-webkit-transition: background-color 0.5s; /* Safari */
+}
+.toc li a {
+	transition: background-color 1s;
+	-webkit-transition: background-color 1s; /* Safari */
+	display: block;
+	width: 100%%;
+	padding: 5px;
+}
+.toc li a:visited,
+.toc li a {
+	color: #544;
+}
+
 </style>
 </head>
 <body>
+<div class='toc'>
+<ul>
+<li><a href='#personal'>Personal Data</a></li>
+<li><a href='#summary'>Summary</a></li>
+<li><a href='#interests'>Interests</a></li>
+<li><a href='#education'>Education</a></li>
+<li><a href='#languages'>Languages</a></li>
+<li><a href='#experience'>Experience</a></li>
+<li><a href='#publications'>Publications</a></li>
+<li><a href='#skills'>Skills</a></li>
+<li><a href='#portfolio'>Portfolio</a></li>
+</ul>
+</div>
+<div class='content'>
 <h1>%(firstName)s %(surname)s's Vitae</h1>
 <img class='vitaePhoto' src='%(photo)s'  />
-<h2>Personal data</h2>
+<h2 id='personal'>Personal data</h2>
 <ul>
 <li><b>First name:</b> %(firstName)s</li>
 <li><b>Surname:</b> %(surname)s</li>
@@ -276,36 +336,37 @@ a:link, a:visited, a:active {
 <li><b>Born:</b> %(birthDate)s</li>
 <li><b>Nationality:</b> %(nationality)s</li>
 </ul>
-<h2>Summary</h2>
+<h2 id='summary'>Summary</h2>
 <p>
 %(summary)s
 </p>
 """%dict(curriculum) + """
-<h2>Interests</h2>
+<h2 id='interests'>Interests</h2>
 <p>""" + ", ".join(curriculum['interests'])+"""
 </p>
-<h2>Education</h2>
+<h2 id='education'>Education</h2>
 <dl>
 """ + "".join(htmlEducation(education) for education in curriculum['educations']) + """
 </dl>
-<h2>Languages</h2>
+<h2 id='languages'>Languages</h2>
 <ul>
 """ + "".join(htmlLanguage(language,level) for language, level in curriculum['languages'].items()) + """
 </ul>
-<h2>Experience</h2>
+<h2 id='experience'>Experience</h2>
 <dl>
 """ + "".join(htmlPosition(position) for position in curriculum['positions']) + """
 </dl>
-<h2>Publications</h2>
+<h2 id='publications'>Publications</h2>
 """ + "".join(htmlPublication(publication) for publication in curriculum['publications']) + """
-<h2>Skills</h2>
+<h2 id='skills'>Skills</h2>
 <dl>
 """ + "".join(htmlSkill(skill,description) for skill, description in curriculum['skills']) + """
 </dl>
-<h2 id='Portfolio'>Portfolio</h2>
+<h2 id='portfolio'>Portfolio</h2>
 <dl>
 """ + "".join(htmlWork(sample) for sample in curriculum['portfolio']) + """
 </dl>
+</div>
 </body>
 </html>
 """

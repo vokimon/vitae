@@ -1,10 +1,13 @@
-<?xml version='1.1' encoding='utf-8' ?>
 <html>
-
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <style>
 body {
-	width: 6in;
+	color: black;
+	background-color: #fff;
+}
+.content {
+	width: 40em;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: justify;
@@ -49,23 +52,80 @@ a:link, a:visited, a:active {
 	text-decoration: none;
 	display: inline;
 	display: block;
-/*	width: 14em;*/
 	background: #ffe;
 	border: 1pt solid #aa8;
 	opacity: .8;
 	padding: 1ex;
-/*	position: absolute;*/
 }
 .vitaePhoto {
 	float: right;
 	width: 25%;
 }
+.toc {
+	width: 10em;
+	display: none;
+	color: #555;
+	background: eee;
+	position: fixed;
+	left: 3em;
+	border: #ddd solid 1px;
+}
+@media only screen and (min-width: 70em) {
+.toc {
+	display: block;
+}
+}
+.toc ul {
+	padding: 1em;
+	margin: 0;
+	list-style-type: none;
+	list-style-position: inside;
+}
+.toc li a {
+	width: 100%;
+}
+.toc li a:active {
+	color: red;
+}
+.toc li a:hover {
+	color: black;
+	background: #fca;
+	padding-left: 0.5em;
+	transition: background-color 0.5s;
+	-webkit-transition: background-color 0.5s; /* Safari */
+}
+.toc li a {
+	transition: background-color 1s;
+	-webkit-transition: background-color 1s; /* Safari */
+	display: block;
+	width: 100%;
+	padding: 5px;
+}
+.toc li a:visited,
+.toc li a {
+	color: #544;
+}
+
 </style>
 </head>
 <body>
+<div class='toc'>
+<ul>
+<li><a href='#personal'>Personal Data</a></li>
+<li><a href='#summary'>Summary</a></li>
+<li><a href='#interests'>Interests</a></li>
+<li><a href='#education'>Education</a></li>
+<li><a href='#languages'>Languages</a></li>
+<li><a href='#experience'>Experience</a></li>
+<li><a href='#publications'>Publications</a></li>
+<li><a href='#skills'>Skills</a></li>
+<li><a href='#portfolio'>Portfolio</a></li>
+</ul>
+</div>
+<div class='content'>
 <h1>David García Garzón's Vitae</h1>
 <img class='vitaePhoto' src='http://canvoki.net/bichos-low.png'  />
-<h2>Personal data</h2>
+<h2 id='personal'>Personal data</h2>
 <ul>
 <li><b>First name:</b> David</li>
 <li><b>Surname:</b> García Garzón</li>
@@ -74,7 +134,7 @@ a:link, a:visited, a:active {
 <li><b>Born:</b> 10th May 1975, Barcelona, Spain</li>
 <li><b>Nationality:</b> Spain</li>
 </ul>
-<h2>Summary</h2>
+<h2 id='summary'>Summary</h2>
 <p>
 I am a researcher specialized on the domains of 3D Acoustics, Music Information Retrieval and Audio Software Engineering.
 My current research is related to 3D Acoustics.
@@ -86,10 +146,10 @@ Some technologies I recently hacked with are Qt, C++, Python, Django, PHP, SCons
 
 </p>
 
-<h2>Interests</h2>
+<h2 id='interests'>Interests</h2>
 <p>Music software engineering, Music information retrieval, 3D acoustics simulation, 3D audio production and playback, Emergent evolutionary systems, Free and Open Source Software, Software project management
 </p>
-<h2>Education</h2>
+<h2 id='education'>Education</h2>
 <dl>
 
 <dt><span class='educatiionPeriod'>[2007 - Ongoing]</span></dt>
@@ -123,7 +183,7 @@ Final Career Work: Bioscena, an evolutionary environment with interaction among 
 </dd>
 
 </dl>
-<h2>Languages</h2>
+<h2 id='languages'>Languages</h2>
 <ul>
 
 <li><span class="languageName">Catalan:</span> Native speaker</li>
@@ -133,7 +193,7 @@ Final Career Work: Bioscena, an evolutionary environment with interaction among 
 <li><span class="languageName">Spanish:</span> Native speaker</li>
 
 </ul>
-<h2>Experience</h2>
+<h2 id='experience'>Experience</h2>
 <dl>
 
 <dt><span class='positionPeriod'>[Sep 2002 - Now]</span></dt>
@@ -192,7 +252,7 @@ Working at client site, EDS Iberia, on the ticketing section: Legacy code mainta
 Preparing written materials (a Smalltalk-80 manual). Teaching departamental courses on Advanced C. Teaching laboratory sessions of Programming I course. Educational intensification on Programming II. Adapting a Genetic Algorithms tool to solve permutation problems (TSP). </dd>
 
 </dl>
-<h2>Publications</h2>
+<h2 id='publications'>Publications</h2>
 
 <p><span class='pubAuthor'>D. Garcia, D. Arteaga,  J.  Usher, T. Mateos</span> 2010.<br />
 <span class='pubTitle'>"Determining a room geometry from its impulse response"</span><br />
@@ -299,7 +359,7 @@ Proceedings of 17th Annual ACM Conference on Object-Oriented Programming, System
 Proceedings of MOSART Workshop on Current Research Directions in Computer Music. Barcelona
 </p>
 
-<h2>Skills</h2>
+<h2 id='skills'>Skills</h2>
 <dl>
 
 <dt><span class="skillName">Programming Languages:</span></dt>
@@ -327,7 +387,7 @@ Proceedings of MOSART Workshop on Current Research Directions in Computer Music.
 <dd>I have experience using Gimp (PaintShop equivalent) and Inkscape (Freehand/Illustrator equivalent). I used them for both artistic and professional purposes. </dd>
 
 </dl>
-<h2 id='Portfolio'>Portfolio</h2>
+<h2 id='portfolio'>Portfolio</h2>
 <dl>
 
 <dt><span class='sampleTitle'>CLAM (C++ Library of Audio and Music)</span>, <a href='http://clam-project.org'>http://clam-project.org</a></dt>
@@ -366,5 +426,6 @@ Proceedings of MOSART Workshop on Current Research Directions in Computer Music.
 </dd>
 
 </dl>
+</div>
 </body>
 </html>
