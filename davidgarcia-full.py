@@ -108,9 +108,9 @@ Some technologies I recently hacked with are Qt, C++, Python, Django, PHP, SCons
 			start = 'Aug 2000',
 			end = 'Dec 2003',
 			description =
-				"""Developing intranet applications for industrial engineering environments. """+
-				"""Deploying the development environment (CVS, Mantis, Automated tests...). """+
-				"""Involved PHP, unix shell scripting and dealing multiple UNIX flavors.""",
+				"""Developing intranet applications for industrial engineering environments. """
+				"""Deploying the development environment (CVS, Mantis, Automated tests...). """
+				"""Involved PHP, unix shell scripting and dealing multiple UNIX flavors. """,
 		),
 		Position(
 			company = 'FUNITEC',
@@ -125,9 +125,9 @@ Some technologies I recently hacked with are Qt, C++, Python, Django, PHP, SCons
 			start = 'Jul 1997',
 			end = 'Dec 1997',
 			description =
-				"""Working at client site, EDS Iberia, on the ticketing section: """+
-				"""Legacy code maintenance involving AIX, C, DB’s and """+
-				"""ticket printer low level programming. """+
+				"""Working at client site, EDS Iberia, on the ticketing section: """
+				"""Legacy code maintenance involving AIX, C, DB’s and """
+				"""ticket printer low level programming. """
 				"""Quality control and assurance on a developing system involving Oracle technologies.""",
 		),
 		Position(
@@ -136,10 +136,10 @@ Some technologies I recently hacked with are Qt, C++, Python, Django, PHP, SCons
 			start = 'Sep 1994',
 			end = 'Jun 1997',
 			description =
-				"""Preparing written materials (a Smalltalk-80 manual). """+
-				"""Teaching courses on Advanced C. """+
-				"""Teaching laboratory sessions of Programming I course. """+
-				"""Educational intensification on Programming II. """+
+				"""Preparing written materials (a Smalltalk-80 manual). """
+				"""Teaching courses on Advanced C. """
+				"""Teaching laboratory sessions of Programming I course. """
+				"""Educational intensification on Programming II. """
 				"""Adapting a Genetic Algorithms tool to solve permutation problems (TSP). """,
 		),
 	],
@@ -230,10 +230,11 @@ Some technologies I recently hacked with are Qt, C++, Python, Django, PHP, SCons
 			"""I have have experience programing plugins and hosts for different plugin platforms: Ladspa, Lv2, Vst, and AudioUnits. """
 		),
 		('3D Programming',
-			"""I have experience programing the OpenGL API. """+
-			"""I experience on programming raster, shading and texturization routines. """+
-			"""I have some notions on modeling and animating scenes. """+
-			"""I have experience on modeling languages such as PovRay. """),
+			"""I have experience programing the OpenGL API. """
+			"""I experience on programming raster, shading and texturization routines. """
+			"""I have some notions on modeling and animating scenes. """
+			"""I have experience on modeling languages such as PovRay. """
+		),
 		('2D Graphics',
 			"""I have experience using Gimp (PaintShop equivalent) and Inkscape (Freehand/Illustrator equivalent). """
 			"""I used them for both artistic and professional purposes. """
@@ -241,38 +242,66 @@ Some technologies I recently hacked with are Qt, C++, Python, Django, PHP, SCons
 		('Mobile/Embedded',
 			"""I developed applications for Android using the Qt framework (C++ and QML). """
 		),
-		],
+	],
 	publications = [
+		Publication(
+			title= "Layout Remapping Tool for Multichannel Audio Productions",
+			author= "Tim Schmele, David García-Garzón, Umut Sayin, Davide Scaini and Daniel Arteaga",
+			notes = "134th Audio Engineering Society Convention; May 2013; Parma, Italy",
+			year = "2013",
+			url= "http://www.aes.org/e-lib/browse.cfm?elib=16807",
+			abstract = """\
+				Several multichannel audio formats are present in the recording industry with reduced interoperability among the formats.
+				This diversity of formats leaves the end user with limited accessibility to content and/or audience.
+				In addition, the preservation of recordings—that are made for a particular format—comes under threat, should the format become obsolete.
+				To tackle such issues, we present a layout-to-layout conversion tool that allows converting recordings
+				that are designated for one particular layout to any other layout.
+				This is done by decoding the existent recording to a layout independent equivalent
+				and then encoding it to desired layout through different rendering methods.
+				The tool has proven useful according to expert opinions.
+				Simulations depict that after several consecutive conversions the results exhibit a decrease in spatial accuracy and increase in overall gain.
+				This suggests that consecutive conversions should be avoided and only a single conversion from the originally rendered material should be done.
+				"""
+		),
+		Publication(
+			title = "IPyCLAM Enpowering CLAM with Python",
+			author = "David Garcia Garzón and Xavier Serra Roman",
+			notes = "11th Linux Audio Conference 2013; University of Music and Performing Arts; Graz, Austria; May 2013",
+			year = "2013",
+			url = "http://lac.linuxaudio.org/2013/papers/54.pdf",
+			slides = "http://lac.linuxaudio.org/2013/download/lac2013_ipyclam-presentation.pdf",
+			abstract = """This paper introduces ipyclam, a new way of manipulating networks in CLAM (C++ Library for Audio and Music) by using the Python language. This extends the power of the framework in many ways. Some of them are exploring and manipulating live processing networks via interactive Python shells, or extending the power of visual prototyping in CLAM by adding elaborated application logic and user interfaces with PyQt/PySide. The described Python API, ipyclam, by redefining the back-end layer, can be reused to control other patching based systems such as JACK, gAlan..."""
+		),
 		Publication(
 			author = "D. Garcia, D. Arteaga,  J.  Usher, T. Mateos",
 			title ="Determining a room geometry from its impulse response",
 			year = "2010",
 			notes = "Presented at Internoise10, Lisbon, June 2010.",
-#			abstract = """This paper reports on the development of a system to characterize the geometric properties of a space from an acoustic impulse response measured within it. This can be thought of as the inverse problem to the common practice of obtaining impulse responses from either a real-world or a virtual space. Starting from a measured or synthesized impulse response in an original scene, the method described here defines a space of possible scenes and a distance measure on it, and discusses a strategy to select a scene from this space, which is perceptually as close as possible to the original one. Potential applications of this novel method include audio forensics, re-equalization and re-mixing of music and audio.""",
-#			url = "http://www.20203dmedia.eu/materials/papers/SCENE_GEOMETRY.pdf",
+			abstract = """This paper reports on the development of a system to characterize the geometric properties of a space from an acoustic impulse response measured within it. This can be thought of as the inverse problem to the common practice of obtaining impulse responses from either a real-world or a virtual space. Starting from a measured or synthesized impulse response in an original scene, the method described here defines a space of possible scenes and a distance measure on it, and discusses a strategy to select a scene from this space, which is perceptually as close as possible to the original one. Potential applications of this novel method include audio forensics, re-equalization and re-mixing of music and audio.""",
+			url = "http://www.20203dmedia.eu/materials/papers/SCENE_GEOMETRY.pdf",
 		),
 		Publication(
 			author= "Bailer, W. Arumi, P. Mateos, T. Garriga, A. Durany, J. and Garcia, D.",
 			title ="Estimating 3D Camera Motion for Rendering Audio in Virtual Scenes",
 			year = "2009",
 			notes = "5th European Conference on Visual Media Production, 2008.",
-#			abstract = """Abstract: In the production phase of digital cinema content it is important to allow the director not only to preview the final rendered scene early in the shooting process, but also to prehear the 5.1 surround and HRTF-based binaural versions, thus enabling visual and auditive artistic decisions to be taken at the shooting stage. In many cases camera tracking data is not available for all cameras on the set (e.g. handheld ones) and thus the motion of the camera needs to be estimated. In this paper we describe an approach for estimation of 3D camera motion and its use for real-time audio rendering.""",
+			abstract = """Abstract: In the production phase of digital cinema content it is important to allow the director not only to preview the final rendered scene early in the shooting process, but also to prehear the 5.1 surround and HRTF-based binaural versions, thus enabling visual and auditive artistic decisions to be taken at the shooting stage. In many cases camera tracking data is not available for all cameras on the set (e.g. handheld ones) and thus the motion of the camera needs to be estimated. In this paper we describe an approach for estimation of 3D camera motion and its use for real-time audio rendering.""",
 		),
 		Publication(
 			author = "Jun Wang, Xavier Amatriain, David Garcia Garzón, Jinlin Wang",
 			title ="Combining multi-level audio descriptors via web identification and aggregation",
 			year = "2009",
 			notes = "Presented at World Wide Web Conference'09, Developers Track, Madrid",
-#			abstract = """In this paper, we present the CLAM Aggregator, a tool included in the CLAM framework that allows combining multi-level audio descriptors. The tool includes a reliable method to identify the user’s local music collection using open data resources and allows users to configure, aggregate and edit music information ranging from low-level descriptors to any metadata from the semantic Web. All these steps are designed in a flexible, graphical, and user-adaptive way.""",
-#			url = "http://xavier.amatriain.net/pubs/wang_www09.pdf",
+			abstract = """In this paper, we present the CLAM Aggregator, a tool included in the CLAM framework that allows combining multi-level audio descriptors. The tool includes a reliable method to identify the user’s local music collection using open data resources and allows users to configure, aggregate and edit music information ranging from low-level descriptors to any metadata from the semantic Web. All these steps are designed in a flexible, graphical, and user-adaptive way.""",
+			url = "http://xavier.amatriain.net/pubs/wang_www09.pdf",
 		),
 		Publication(
 			author = "P. Arumi, D. Garcia, T. Mateos, A. Garriga and J. Durany.",
 			title = "Real-time 3D audio for digital cinema",
 			year = "2008",
-			notes = "ASA Conference ACOUSTICS'08 Paris."
-#			abstract = """We present a real-time 3D audio system with a number of nice features: it is suited for plausible reference with the visual environment, it is real-time capable, it can process multiple moving sound sources and listeners in a normal CPU. In our approach, a database of pressure and velocities impulse-responses (IRs) is computed offline for each (architectural) environment using physically based ray-tracing techniques. During playback, the real-time system retrieves IRs corresponding to the sources and target positions, performs a low-latency partitioned convolution and smoothes IR transitions with cross-fades. Finally, the system is flexible enough to decode to any surround exhibition setup. The software has been developed within the CLAM open-source audio framework. We present a real scenario where these techniques were successfully applied: an augmented-reality film with 3D audio within the context of the IP-RACINE project for digital cinema. The shooting was done with a high-end prototype camera with zoom and position tracking which enabled the real-time motion of a subjective listener within the scene. Our technology enabled the film director to both pre-hear surround audio of an augmented-reality scene shooting and fine-tune audio rendering in post-production.""",
-#			slides = "http://www.20203dmedia.eu/materials/papers/slides_acoustics08_realtime.pdf",
+			notes = "ASA Conference ACOUSTICS'08 Paris.",
+			abstract = """We present a real-time 3D audio system with a number of nice features: it is suited for plausible reference with the visual environment, it is real-time capable, it can process multiple moving sound sources and listeners in a normal CPU. In our approach, a database of pressure and velocities impulse-responses (IRs) is computed offline for each (architectural) environment using physically based ray-tracing techniques. During playback, the real-time system retrieves IRs corresponding to the sources and target positions, performs a low-latency partitioned convolution and smoothes IR transitions with cross-fades. Finally, the system is flexible enough to decode to any surround exhibition setup. The software has been developed within the CLAM open-source audio framework. We present a real scenario where these techniques were successfully applied: an augmented-reality film with 3D audio within the context of the IP-RACINE project for digital cinema. The shooting was done with a high-end prototype camera with zoom and position tracking which enabled the real-time motion of a subjective listener within the scene. Our technology enabled the film director to both pre-hear surround audio of an augmented-reality scene shooting and fine-tune audio rendering in post-production.""",
+			slides = "http://www.20203dmedia.eu/materials/papers/slides_acoustics08_realtime.pdf",
 		),
 		Publication(
 			author = "Garcia, D.",
@@ -285,7 +314,7 @@ Some technologies I recently hacked with are Qt, C++, Python, Django, PHP, SCons
 			year ='2009',
 			title = "3D-Audio with CLAM and Blender's Game Engine",
 			notes = "Proceedings of the 7th International Linux Audio Conference (LAC09); April 2009; Parma, Italy.",
-#			video = "http://lac.linuxaudio.org/2009/cdm/Thursday/05_Arumi/index.html",
+			video = "http://lac.linuxaudio.org/2009/cdm/Thursday/05_Arumi/index.html",
 		),
 		Publication(
 			author = u'Arumí, P. Amatriain, X. García, D.',
@@ -304,7 +333,7 @@ Some technologies I recently hacked with are Qt, C++, Python, Django, PHP, SCons
 			year = '2006',
 			title = 'A Data Flow Pattern Language for Audio and Music Computing',
 			notes = 'Proceedings of Pattern Languages of Programs 2006; Portland, Oregon',
-#			uri = "dataflow_patterns_plop06.pdf",
+			url = "dataflow_patterns_plop06.pdf",
 			),
 		Publication(
 			author = u'Amatriain, X. Arumí, P. García, D.',

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -16,6 +17,10 @@ body {
 h2 {
 	color: #834;
 	border-bottom: solid 1pt black;
+}
+.publication {
+	margin-top: 2ex;
+	margin-bottom: 2ex;
 }
 .pubAuthor {
 	color: #631;
@@ -36,14 +41,15 @@ h2 {
 	font-weight: bold;
 	color: #964
 }
+a:link, a:visited, a:active, .pubAbstract {
+	color: blue;
+	text-decoration: none;
+}
 .dropDown {
 	color: blue;
 }
 .dropDown {
 	display: none;
-}
-a:link, a:visited, a:active {
-	text-decoration: none;
 }
 :hover > div.dropDown ,
 :hover > div.dropDown ,
@@ -56,6 +62,8 @@ a:link, a:visited, a:active {
 	border: 1pt solid #aa8;
 	opacity: .8;
 	padding: 1ex;
+	padding-left: 4ex;
+	padding-right: 2ex;
 }
 .vitaePhoto {
 	float: right;
@@ -234,7 +242,7 @@ Providing group wide support for audio software engineering dealing with technol
 <dt><span class='positionPeriod'>[Aug 2000 - Dec 2003]</span></dt>
 <dd><span class='positionTitle'>Senior Programmer and Analyst</span> at
 <span class='positionCompany'>Cards Engineering Spain, S.L.</span>.<br />
-Developing intranet applications for industrial engineering environments. Deploying the development environment (CVS, Mantis, Automated tests...). Involved PHP, unix shell scripting and dealing multiple UNIX flavors.</dd>
+Developing intranet applications for industrial engineering environments. Deploying the development environment (CVS, Mantis, Automated tests...). Involved PHP, unix shell scripting and dealing multiple UNIX flavors. </dd>
 
 <dt><span class='positionPeriod'>[Sep 1998 - Jun 1999]</span></dt>
 <dd><span class='positionTitle'>Teacher</span> at
@@ -254,110 +262,182 @@ Preparing written materials (a Smalltalk-80 manual). Teaching courses on Advance
 </dl>
 <h2 id='publications'>Publications</h2>
 
-<p><span class='pubAuthor'>D. Garcia, D. Arteaga,  J.  Usher, T. Mateos</span> 2010.<br />
+<div class='publication'>
+<span class='pubAuthor'>Tim Schmele, David García-Garzón, Umut Sayin, Davide Scaini and Daniel Arteaga</span> 2013.<br />
+<span class='pubTitle'>"Layout Remapping Tool for Multichannel Audio Productions"</span><br />
+134th Audio Engineering Society Convention; May 2013; Parma, Italy
+<span class='pubUrl'><a target='_blank' href='http://www.aes.org/e-lib/browse.cfm?elib=16807'>[Download]</a></span><span class='pubAbstract'>[Abstract]<div class='dropDown'>
+				Several multichannel audio formats are present in the recording industry with reduced interoperability among the formats.
+				This diversity of formats leaves the end user with limited accessibility to content and/or audience.
+				In addition, the preservation of recordings—that are made for a particular format—comes under threat, should the format become obsolete.
+				To tackle such issues, we present a layout-to-layout conversion tool that allows converting recordings
+				that are designated for one particular layout to any other layout.
+				This is done by decoding the existent recording to a layout independent equivalent
+				and then encoding it to desired layout through different rendering methods.
+				The tool has proven useful according to expert opinions.
+				Simulations depict that after several consecutive conversions the results exhibit a decrease in spatial accuracy and increase in overall gain.
+				This suggests that consecutive conversions should be avoided and only a single conversion from the originally rendered material should be done.
+				</div></span>
+</div>
+
+<div class='publication'>
+<span class='pubAuthor'>David Garcia Garzón and Xavier Serra Roman</span> 2013.<br />
+<span class='pubTitle'>"IPyCLAM Enpowering CLAM with Python"</span><br />
+11th Linux Audio Conference 2013; University of Music and Performing Arts; Graz, Austria; May 2013
+<span class='pubUrl'><a target='_blank' href='http://lac.linuxaudio.org/2013/papers/54.pdf'>[Download]</a></span><span class='pubSlides'><a target='_blank' href='http://lac.linuxaudio.org/2013/download/lac2013_ipyclam-presentation.pdf'>[Slides]</a></span><span class='pubAbstract'>[Abstract]<div class='dropDown'>
+This paper introduces ipyclam, a new way of manipulating networks in CLAM (C++ Library for Audio and Music) by using the Python language. This extends the power of the framework in many ways. Some of them are exploring and manipulating live processing networks via interactive Python shells, or extending the power of visual prototyping in CLAM by adding elaborated application logic and user interfaces with PyQt/PySide. The described Python API, ipyclam, by redefining the back-end layer, can be reused to control other patching based systems such as JACK, gAlan...</div></span>
+</div>
+
+<div class='publication'>
+<span class='pubAuthor'>D. Garcia, D. Arteaga,  J.  Usher, T. Mateos</span> 2010.<br />
 <span class='pubTitle'>"Determining a room geometry from its impulse response"</span><br />
 Presented at Internoise10, Lisbon, June 2010.
-</p>
+<span class='pubUrl'><a target='_blank' href='http://www.20203dmedia.eu/materials/papers/SCENE_GEOMETRY.pdf'>[Download]</a></span><span class='pubAbstract'>[Abstract]<div class='dropDown'>
+This paper reports on the development of a system to characterize the geometric properties of a space from an acoustic impulse response measured within it. This can be thought of as the inverse problem to the common practice of obtaining impulse responses from either a real-world or a virtual space. Starting from a measured or synthesized impulse response in an original scene, the method described here defines a space of possible scenes and a distance measure on it, and discusses a strategy to select a scene from this space, which is perceptually as close as possible to the original one. Potential applications of this novel method include audio forensics, re-equalization and re-mixing of music and audio.</div></span>
+</div>
 
-<p><span class='pubAuthor'>Bailer, W. Arumi, P. Mateos, T. Garriga, A. Durany, J. and Garcia, D.</span> 2009.<br />
+<div class='publication'>
+<span class='pubAuthor'>Bailer, W. Arumi, P. Mateos, T. Garriga, A. Durany, J. and Garcia, D.</span> 2009.<br />
 <span class='pubTitle'>"Estimating 3D Camera Motion for Rendering Audio in Virtual Scenes"</span><br />
 5th European Conference on Visual Media Production, 2008.
-</p>
+<span class='pubAbstract'>[Abstract]<div class='dropDown'>
+Abstract: In the production phase of digital cinema content it is important to allow the director not only to preview the final rendered scene early in the shooting process, but also to prehear the 5.1 surround and HRTF-based binaural versions, thus enabling visual and auditive artistic decisions to be taken at the shooting stage. In many cases camera tracking data is not available for all cameras on the set (e.g. handheld ones) and thus the motion of the camera needs to be estimated. In this paper we describe an approach for estimation of 3D camera motion and its use for real-time audio rendering.</div></span>
+</div>
 
-<p><span class='pubAuthor'>Jun Wang, Xavier Amatriain, David Garcia Garzón, Jinlin Wang</span> 2009.<br />
+<div class='publication'>
+<span class='pubAuthor'>Jun Wang, Xavier Amatriain, David Garcia Garzón, Jinlin Wang</span> 2009.<br />
 <span class='pubTitle'>"Combining multi-level audio descriptors via web identification and aggregation"</span><br />
 Presented at World Wide Web Conference'09, Developers Track, Madrid
-</p>
+<span class='pubUrl'><a target='_blank' href='http://xavier.amatriain.net/pubs/wang_www09.pdf'>[Download]</a></span><span class='pubAbstract'>[Abstract]<div class='dropDown'>
+In this paper, we present the CLAM Aggregator, a tool included in the CLAM framework that allows combining multi-level audio descriptors. The tool includes a reliable method to identify the user’s local music collection using open data resources and allows users to configure, aggregate and edit music information ranging from low-level descriptors to any metadata from the semantic Web. All these steps are designed in a flexible, graphical, and user-adaptive way.</div></span>
+</div>
 
-<p><span class='pubAuthor'>P. Arumi, D. Garcia, T. Mateos, A. Garriga and J. Durany.</span> 2008.<br />
+<div class='publication'>
+<span class='pubAuthor'>P. Arumi, D. Garcia, T. Mateos, A. Garriga and J. Durany.</span> 2008.<br />
 <span class='pubTitle'>"Real-time 3D audio for digital cinema"</span><br />
 ASA Conference ACOUSTICS'08 Paris.
-</p>
+<span class='pubSlides'><a target='_blank' href='http://www.20203dmedia.eu/materials/papers/slides_acoustics08_realtime.pdf'>[Slides]</a></span><span class='pubAbstract'>[Abstract]<div class='dropDown'>
+We present a real-time 3D audio system with a number of nice features: it is suited for plausible reference with the visual environment, it is real-time capable, it can process multiple moving sound sources and listeners in a normal CPU. In our approach, a database of pressure and velocities impulse-responses (IRs) is computed offline for each (architectural) environment using physically based ray-tracing techniques. During playback, the real-time system retrieves IRs corresponding to the sources and target positions, performs a low-latency partitioned convolution and smoothes IR transitions with cross-fades. Finally, the system is flexible enough to decode to any surround exhibition setup. The software has been developed within the CLAM open-source audio framework. We present a real scenario where these techniques were successfully applied: an augmented-reality film with 3D audio within the context of the IP-RACINE project for digital cinema. The shooting was done with a high-end prototype camera with zoom and position tracking which enabled the real-time motion of a subjective listener within the scene. Our technology enabled the film director to both pre-hear surround audio of an augmented-reality scene shooting and fine-tune audio rendering in post-production.</div></span>
+</div>
 
-<p><span class='pubAuthor'>Garcia, D.</span> 2007.<br />
+<div class='publication'>
+<span class='pubAuthor'>Garcia, D.</span> 2007.<br />
 <span class='pubTitle'>"Visual Prototyping of Audio Applications"</span><br />
 Master Thesis, Master Program in Information, Communication and Audiovisual Media. Advisors: Xavier Serra and Xavier Amatriain. Department of Information and Communication Technologies, Universitat Pompeu Fabra. Barcelona, September 2007.
-</p>
 
-<p><span class='pubAuthor'>Olaiz, N. Arumí, P. Mateos, T. García, D.</span> 2009.<br />
+</div>
+
+<div class='publication'>
+<span class='pubAuthor'>Olaiz, N. Arumí, P. Mateos, T. García, D.</span> 2009.<br />
 <span class='pubTitle'>"3D-Audio with CLAM and Blender's Game Engine"</span><br />
 Proceedings of the 7th International Linux Audio Conference (LAC09); April 2009; Parma, Italy.
-</p>
 
-<p><span class='pubAuthor'>Arumí, P. Amatriain, X. García, D.</span> 2008.<br />
+</div>
+
+<div class='publication'>
+<span class='pubAuthor'>Arumí, P. Amatriain, X. García, D.</span> 2008.<br />
 <span class='pubTitle'>"A Framework for Efficient and Rapid Development of Cross-platform Audio Applications"</span><br />
 ACM Multimedia Systems Journal; 14(1) June 2008
-</p>
 
-<p><span class='pubAuthor'>García, D. Arumí, P. Amatriain, X.</span> 2007.<br />
+</div>
+
+<div class='publication'>
+<span class='pubAuthor'>García, D. Arumí, P. Amatriain, X.</span> 2007.<br />
 <span class='pubTitle'>"Visual prototyping of audio applications"</span><br />
 Proceedings of Linux Audio Conference 2007; Berlin; Germany
-</p>
 
-<p><span class='pubAuthor'>Arumí, P. García, D. Amatriain, X.</span> 2006.<br />
+</div>
+
+<div class='publication'>
+<span class='pubAuthor'>Arumí, P. García, D. Amatriain, X.</span> 2006.<br />
 <span class='pubTitle'>"A Data Flow Pattern Language for Audio and Music Computing"</span><br />
 Proceedings of Pattern Languages of Programs 2006; Portland, Oregon
-</p>
+<span class='pubUrl'><a target='_blank' href='dataflow_patterns_plop06.pdf'>[Download]</a></span>
+</div>
 
-<p><span class='pubAuthor'>Amatriain, X. Arumí, P. García, D.</span> 2006.<br />
+<div class='publication'>
+<span class='pubAuthor'>Amatriain, X. Arumí, P. García, D.</span> 2006.<br />
 <span class='pubTitle'>"CLAM: A Framework for Efficient and Rapid Development of Cross-platform Audio Applications"</span><br />
 Proceedings of ACM Multimedia 2006; Santa Barbara, CA
-</p>
 
-<p><span class='pubAuthor'>Arumí, P. Sordo, M. García, D. Amatriain, X.</span> 2006.<br />
+</div>
+
+<div class='publication'>
+<span class='pubAuthor'>Arumí, P. Sordo, M. García, D. Amatriain, X.</span> 2006.<br />
 <span class='pubTitle'>"Testfarm, una eina per millorar el desenvolupament del programari lliure"</span><br />
 Proceedings of V Jornades de Programari Lliure; Barcelona
-</p>
 
-<p><span class='pubAuthor'>García, D. Arumí, P. Amatriain, X.</span> 2006.<br />
+</div>
+
+<div class='publication'>
+<span class='pubAuthor'>García, D. Arumí, P. Amatriain, X.</span> 2006.<br />
 <span class='pubTitle'>"Extracció d'acords amb l'Anotador de Música de CLAM"</span><br />
 Proceedings of V Jornades de Programari Lliure; Barcelona
-</p>
 
-<p><span class='pubAuthor'>Amatriain, X. Massaguer, J. García, D. Mosquera, I.</span> 2005.<br />
+</div>
+
+<div class='publication'>
+<span class='pubAuthor'>Amatriain, X. Massaguer, J. García, D. Mosquera, I.</span> 2005.<br />
 <span class='pubTitle'>"The CLAM Annotator: A Cross-platform Audio Descriptors Editing Tool"</span><br />
 Poster presented at 6th International Conference on Music Information Retrieval; London, UK
-</p>
 
-<p><span class='pubAuthor'>Cano, P. Koppenberger, M. Wack, N. G. Mahedero, J. Masip, J. Celma, O. García, D. Gómez, E. Gouyon, F. Guaus, E. Herrera, P. Massaguer, J. Ong, B. Ramírez, M. Streich, S. Serra, X.</span> 2005.<br />
+</div>
+
+<div class='publication'>
+<span class='pubAuthor'>Cano, P. Koppenberger, M. Wack, N. G. Mahedero, J. Masip, J. Celma, O. García, D. Gómez, E. Gouyon, F. Guaus, E. Herrera, P. Massaguer, J. Ong, B. Ramírez, M. Streich, S. Serra, X.</span> 2005.<br />
 <span class='pubTitle'>"An Industrial-Strength Content-based Music Recommendation System"</span><br />
 Proceedings of 28th Annual International ACM SIGIR Conference; Salvador, Brazil
-</p>
 
-<p><span class='pubAuthor'>Cano, P. Koppenberger, M. Wack, N. G. Mahedero, J. Aussenac, T. Marxer, R. Masip, J. Celma, O. García, D. Gómez, E. Gouyon, F. Guaus, E. Herrera, P. Massaguer, J. Ong, B. Ramírez, M. Streich, S. Serra, X.</span> 2005.<br />
+</div>
+
+<div class='publication'>
+<span class='pubAuthor'>Cano, P. Koppenberger, M. Wack, N. G. Mahedero, J. Aussenac, T. Marxer, R. Masip, J. Celma, O. García, D. Gómez, E. Gouyon, F. Guaus, E. Herrera, P. Massaguer, J. Ong, B. Ramírez, M. Streich, S. Serra, X.</span> 2005.<br />
 <span class='pubTitle'>"Content-based Music Audio Recommendation"</span><br />
 Proceedings of ACM Multimedia 2005; Singapore, Singapore
-</p>
 
-<p><span class='pubAuthor'>Herrera, P. Celma, O. Massaguer, J. Cano, P. Gómez, E. Gouyon, F. Koppenberger, M. García, D. G. Mahedero, J. Wack, N.</span> 2005.<br />
+</div>
+
+<div class='publication'>
+<span class='pubAuthor'>Herrera, P. Celma, O. Massaguer, J. Cano, P. Gómez, E. Gouyon, F. Koppenberger, M. García, D. G. Mahedero, J. Wack, N.</span> 2005.<br />
 <span class='pubTitle'>"Mucosa: a music content semantic annotator"</span><br />
 Proceedings of 6th International Conference on Music Information Retrieval; London, UK
-</p>
 
-<p><span class='pubAuthor'>Arumí, P. García, D. Amatriain, X.</span> 2003.<br />
+</div>
+
+<div class='publication'>
+<span class='pubAuthor'>Arumí, P. García, D. Amatriain, X.</span> 2003.<br />
 <span class='pubTitle'>"CLAM, Una llibreria lliure per Audio i Música"</span><br />
 Proceedings of II Jornades de Software Lliure; Barcelona
-</p>
 
-<p><span class='pubAuthor'>Celma, O. Gómez, E. Janer, J. Gouyon, F. Herrera, P. García, D.</span> 2004.<br />
+</div>
+
+<div class='publication'>
+<span class='pubAuthor'>Celma, O. Gómez, E. Janer, J. Gouyon, F. Herrera, P. García, D.</span> 2004.<br />
 <span class='pubTitle'>"Tools for Content-Based Retrieval and Transformation of Audio Using MPEG-7: The SPOffline and the MDTools"</span><br />
 Proceedings of 25th International AES Conference; London, UK
-</p>
 
-<p><span class='pubAuthor'>García, D.</span> 2002.<br />
+</div>
+
+<div class='publication'>
+<span class='pubAuthor'>García, D.</span> 2002.<br />
 <span class='pubTitle'>"Suport de XML/MPEG-7 per una llibreria de processat d'àudio i música."</span><br />
 Enginyeria La Salle. Barcelona
-</p>
 
-<p><span class='pubAuthor'>Amatriain, X. de Boer, M. Robledo, E. García, D.</span> 2002.<br />
+</div>
+
+<div class='publication'>
+<span class='pubAuthor'>Amatriain, X. de Boer, M. Robledo, E. García, D.</span> 2002.<br />
 <span class='pubTitle'>"CLAM: An OO Framework for Developing Audio and Music Applications"</span><br />
 Proceedings of 17th Annual ACM Conference on Object-Oriented Programming, Systems, Languages and Applications. Seattle, WA, USA
-</p>
 
-<p><span class='pubAuthor'>García, D. Amatriain, X.</span> 2001.<br />
+</div>
+
+<div class='publication'>
+<span class='pubAuthor'>García, D. Amatriain, X.</span> 2001.<br />
 <span class='pubTitle'>"XML as a means of control for audio processing, synthesis and analysis"</span><br />
 Proceedings of MOSART Workshop on Current Research Directions in Computer Music. Barcelona
-</p>
+
+</div>
 
 <h2 id='skills'>Skills</h2>
 <dl>

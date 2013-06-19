@@ -132,6 +132,10 @@ class Publication(ConstrainedDict) :
 			requiredFields = "author year title".split(),
 			defaultValues = dict(
 				notes = '',
+				url = '',
+				abstract = '',
+				video = '',
+				slides = '',
 				)
 			)
 class Work(ConstrainedDict) :
@@ -149,12 +153,21 @@ def htmlPosition(position) :
 """%position
 
 def htmlPublication(publication) :
-	return u"""
-<p><span class='pubAuthor'>%(author)s</span> %(year)s.<br />
+	return (u"""
+<div class='publication'>
+<span class='pubAuthor'>%(author)s</span> %(year)s.<br />
 <span class='pubTitle'>"%(title)s"</span><br />
 %(notes)s
-</p>
-"""%publication
+""" + (
+"""<span class='pubUrl'><a target='_blank' href='%(url)s'>[Download]</a></span>"""
+			if publication.get('url',False) else "") + (
+"""<span class='pubSlides'><a target='_blank' href='%(slides)s'>[Slides]</a></span>"""
+			if publication.get('slides',False) else "") + (
+"""<span class='pubAbstract'>[Abstract]<div class='dropDown'>\n%(abstract)s</div></span>"""
+			if publication.get('abstract',False) else "") +
+"""
+</div>
+""")%publication
 
 def htmlEducation(education) :
 	return (u"""
@@ -200,6 +213,7 @@ def htmlLanguage(language, level) :
 def htmlVitae(curriculum) :
 	curriculum = HtmlEncoder().escape(curriculum)
 	return u"""\
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -218,6 +232,10 @@ body {
 h2 {
 	color: #834;
 	border-bottom: solid 1pt black;
+}
+.publication {
+	margin-top: 2ex;
+	margin-bottom: 2ex;
 }
 .pubAuthor {
 	color: #631;
@@ -238,14 +256,15 @@ h2 {
 	font-weight: bold;
 	color: #964
 }
+a:link, a:visited, a:active, .pubAbstract {
+	color: blue;
+	text-decoration: none;
+}
 .dropDown {
 	color: blue;
 }
 .dropDown {
 	display: none;
-}
-a:link, a:visited, a:active {
-	text-decoration: none;
 }
 :hover > div.dropDown ,
 :hover > div.dropDown ,
@@ -258,6 +277,8 @@ a:link, a:visited, a:active {
 	border: 1pt solid #aa8;
 	opacity: .8;
 	padding: 1ex;
+	padding-left: 4ex;
+	padding-right: 2ex;
 }
 .vitaePhoto {
 	float: right;
