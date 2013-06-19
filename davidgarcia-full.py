@@ -13,11 +13,11 @@ myVitae = Vitae(
 	nationality = 'Spain',
 	contactEmail = 'david.garcia at upf.edu',
 	summary =
-"""I am a researcher specialized on the domains of 3D Acoustics, Music Information Retrieval and Audio Software Engineering.
+"""I am a researcher specialized in domains like 3D Acoustics, Music Information Retrieval and Audio Software Engineering.
 My current research is related to 3D Acoustics.
 Some research topics I recently faced are:
 Chord extraction, real-time convolution, 3D virtual scenario acoustics simulation, visual prototyping of audio applications.
-I also have development experience on desktop, web and server applications, related to audio and multimedia.
+I also have development experience on desktop, web and server applications, and related to audio and multimedia.
 I have strong experience using agile methodologies and open source tools and methods.
 Some technologies I recently hacked with are Qt, C++, Python, Django, PHP, SCons, JACK, ALSA, PortAudio, Linux, bash, OpenGL... 
 """,
@@ -447,12 +447,23 @@ Some technologies I recently hacked with are Qt, C++, Python, Django, PHP, SCons
 			title = 'WiKo (The wiki compiler)',
 			url = 'http://wiko.sourceforge.net',
 			description = 
-				"""It is a Python script to generate webs, scientific articles and blogs from files in wiki format. """+
-				"""I developed this tool to ease the maintaining of my own web sites. """+
-				"""Since them it has become a community project at sourceforge """+
-				"""and we have successfully used it in several projects I was involved in. """+
-				"""Some nice features are: produces multiple output (pdf/html) from a single input (wiki), """+
+				"""It is a Python script to generate webs, scientific articles and blogs from files in wiki format. """
+				"""I developed this tool to ease the maintaining of my own web sites. """
+				"""Since them it has become a community project at sourceforge """
+				"""and we have successfully used it in several projects I was involved in. """
+				"""Some nice features are: produces multiple output (pdf/html) from a single input (wiki), """
 				"""supports BiBTeX and LaTeX formulae, imports blogs from blogger, generates image galleries... """,
+			),
+		Work(
+			title = 'TestFarm',
+			url = 'https://github.com/clam-project/testfarm',
+			description = 
+				"TestFarm is a client server system for continous integration. "
+				"It can be thought as a BuilBot alternative, "
+				"more focused on voluteers based projects with no 24/7 compliation farms available. "
+				"After co-mentoring with Pau Arumí the student that started it, Mohamed Sordo, "
+				"I have been mantaining it and in 2012 I did a deep rewrite for 2.0 version."
+				,
 			),
 		Work(
 			title = 'CeView',
@@ -466,9 +477,9 @@ Some technologies I recently hacked with are Qt, C++, Python, Django, PHP, SCons
 			),
 		Work(
 			title = "PyVitae",
-			url = "",
+			url = "https://github.com/vokimon/vitae",
 			description =
-				"""PyVitae is a python project to define curriculum vitae using a simple """+
+				"""PyVitae is a python script to define curriculum vitae using a simple """+
 				"""text based syntax and generating several outputs including html and pdf. """+
 				"""Like WiKo, it follows a write-once-generate-many principle. """+
 				"""This curriculum has been generated using it.""",
