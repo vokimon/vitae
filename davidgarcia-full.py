@@ -224,6 +224,12 @@ an activity I enjoy a lot, and I like to innovate about.
 	courses = [
 		Course(
 			issuer = "CQUID Universitat Pompeu Fabra",
+			title = "Pedagogical Support Sessions for the Pilot Course Migration to the Bologne Plan",
+			start = "May 2007",
+			duration = "80 hours, aprox",
+		),
+		Course(
+			issuer = "CQUID Universitat Pompeu Fabra",
 			title = "Educational and scientific dissemination, copyright, Creative Common licenses and repositories",
 			start = "Nov 2012",
 			duration = "3 hours",
