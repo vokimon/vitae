@@ -1,8 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-from vitae import Vitae, Position, Education, Publication, Work
-
+from vitae import Vitae, Position, Education, Publication, Work, Course, Award
 
 myVitae = Vitae(
 	firstName = 'David',
@@ -16,10 +15,16 @@ myVitae = Vitae(
 """I am a researcher specialized in domains like 3D Acoustics, Music Information Retrieval and Audio Software Engineering.
 My current research is related to 3D Acoustics.
 Some research topics I recently faced are:
-Chord extraction, real-time convolution, 3D virtual scenario acoustics simulation, visual prototyping of audio applications.
-I also have development experience on desktop, web and server applications, and related to audio and multimedia.
+Chord extraction,
+visual prototyping of audio applications,
+real-time convolution,
+3D virtual scenario acoustics simulation,
+binaural reproduction of acoustic environments...
+I also have a long software development experience on desktop, web and server applications, and related to audio and multimedia.
 I have strong experience using agile methodologies and open source tools and methods.
-Some technologies I recently hacked with are Qt, C++, Python, Django, PHP, SCons, JACK, ALSA, PortAudio, Linux, bash, OpenGL... 
+Some technologies I recently hacked with are Qt, C++, Python, Django, PHP, SCons, JACK, ALSA, PortAudio, Linux, bash, OpenGL...
+I have been teaching, mostly to higher school students, since 1995,
+an activity I enjoy a lot, and I like to innovate about.
 """,
 	interests = [
 		"Music software engineering",
@@ -28,7 +33,8 @@ Some technologies I recently hacked with are Qt, C++, Python, Django, PHP, SCons
 		"3D audio production and playback",
 		"Emergent evolutionary systems",
 		"Free and Open Source Software",
-		"Software project management",
+		"Agile Software Project Management",
+		"Teaching",
 		],
 	languages = dict(
 		spanish = 'Native speaker',
@@ -37,14 +43,14 @@ Some technologies I recently hacked with are Qt, C++, Python, Django, PHP, SCons
 		),
 	positions = [
 		Position(
-			company = 'Universitat Pompeu Fabra',
-			title = 'Professor',
-			start = 'Sep 2002',
+			company = 'GuifiBaix',
+			title = 'Founder and partner',
+			start = 'Jun 2013',
 			description = 
-				"""Teaching Software Engineering (Requirements gathering, UML, """+
-				"""Design Patterns, Test Driven Development, Refactoring, """+
-				"""Agile Methodologies, C++) and """+
-				"""Programming III (Object oriented programming, Java).""",
+				"""Creating and developing a business project for the cooperative, """
+				"""Wired and wireless network deployments, and """
+				"""Web application development (P2P, Cloud services...)."""
+#				"""Won special mention as Best Enterprise Project 2013 at Prat de Llobregat."""
 		),
 		Position(
 			company = 'CLAM (C++ Library for Audio and Music)',
@@ -55,6 +61,25 @@ Some technologies I recently hacked with are Qt, C++, Python, Django, PHP, SCons
 				"""CLAM has become a framework of reference in multimedia and audio. """+
 				"""It won the 2006 ACM Award to the Best Multimedia Open Source Software """+
 				"""and was a featured project for 2007 and 2008 editions of the Google Summer of Code.""",
+		),
+		Position(
+			company = 'Associació Impulsant',
+			title = 'Volunteer teacher',
+			start = 'Jan 2013',
+			end = 'Jun 2013',
+			description = 
+				"""Empowering digitally excluded women by teaching them on how to use social networks and open source technologies. """
+		),
+		Position(
+			company = 'Universitat Pompeu Fabra',
+			title = 'Professor',
+			start = 'Sep 2002',
+			end = 'Sep 2012',
+			description = 
+				"""Teaching Software Engineering (Requirements gathering, UML, """+
+				"""Design Patterns, Test Driven Development, Refactoring, """+
+				"""Agile Methodologies, C++) and """+
+				"""Programming III (Object oriented programming, Java).""",
 		),
 		Position(
 			company = u'Barcelona Mèdia',
@@ -196,19 +221,101 @@ Some technologies I recently hacked with are Qt, C++, Python, Django, PHP, SCons
 			end = "1993",
 		),
 	],
+	courses = [
+		Course(
+			issuer = "CQUID Universitat Pompeu Fabra",
+			title = "Educational and scientific dissemination, copyright, Creative Common licenses and repositories",
+			start = "Nov 2012",
+			duration = "3 hours",
+		),
+		Course(
+			issuer = "CQUID Universitat Pompeu Fabra",
+			title = "Reflexive learning as methodology to promote student motivation and creativity",
+			start = "Dec 2012",
+			duration = "3 hours",
+		),
+		Course(
+			issuer = "CQUID Universitat Pompeu Fabra",
+			title = "Educational methodologies: seminars, tutorship and workshops",
+			start = "Feb 2013",
+			duration = "6 hours",
+		),
+		Course(
+			issuer = "CQUID Universitat Pompeu Fabra",
+			title = "Educational methodologies: teaching large groups",
+			start = "Feb 2013",
+			duration = "6 hours",
+		),
+		Course(
+			issuer = "CQUID Universitat Pompeu Fabra",
+			title = "Collaborative Moore Method for Math teaching",
+			start = "Jun 2013",
+			duration = "2 hours",
+		),
+		Course(
+			issuer = "CQUID Universitat Pompeu Fabra",
+			title = "Theatre Techniques for the Classroom",
+			start = "Oct 2013",
+			duration = "12 hours",
+		),
+		Course(
+			issuer = "Federació de Cooperatives de Treball de Catalunya",
+			title = "Being a Co-operative Member",
+			start = "May 2014",
+			duration = "12 hours",
+		),
+		Course(
+			issuer = "Federació de Cooperatives de Treball de Catalunya",
+			title = "Creativity and innovation in social economy enterprises",
+			start = "May 2014",
+			duration = "12 hours",
+		),
+		Course(
+			issuer = "Federació de Cooperatives de Treball de Catalunya",
+			title = "Treasury Management for Co-operatives",
+			start = "Jun 2014",
+			duration = "12 hours",
+		),
+		Course(
+			issuer = "Federació de Cooperatives de Treball de Catalunya",
+			title = "Project development for Co-operatives",
+			start = "Jun 2014",
+			duration = "12 hours",
+		),
+	],
+	awards = [
+		Award(
+			year = "2014",
+			position = "Special Mention",
+			contest = "Best idea or project 2014, Ajuntament del Prat de Llobregat",
+			work = "GuifiBaix business plan",
+		),
+		Award(
+			year = "2009",
+			position = "Outstanding results",
+			contest = "Pilot Bologna Plan Course Migration at UPF",
+			work = "Software Engineering I",
+		),
+		Award(
+			year = "2006",
+			position = "Winner",
+			contest = "ACM Multimedia 2006 Open Source Software Competition",
+			work = "CLAM framework",
+		),
+	],
 	skills = [
 		('Programming Languages',
 			"""I have a deep knowledge on programming and scripting languages """
 			"""such  as C++, Python, PHP, Smalltallk, Java and Bash. """
 		),
 		('Web Standards',
-			"""I've been working on XHTML, HTML 4.1, CSS 2.0, DOM (JavaScript), XML, XPath, XSD, XQuery... """
-			"""I also have experience on building cross browser web pages."""
+			"""I've been working on HTML5, CSS3, JQuery, XML, XPath, XSD, XQuery... """
+			"""I also have experience on building cross browser web pages and using older standards."""
 		),
 		('Operating systems',
 			"""I've been working with several Linux flavors, mostly with Debian, SuSe, Fedora and Ubuntu. """
 			"""I tend to forget anything I learnt about Windows, but I could manage to make it work when needed. """
-			"""I just have very slight knowledge of MacOsX but the underlying FreeBSD."""
+			"""I just have very slight knowledge of MacOsX, just what I needed to barely have my Qt/POSIX apps working on it."""
 		),
 		('Networks',
 			"""I have experience programing network applications and web services (php, python, django) and setting up basic apache servers. """
@@ -240,7 +347,10 @@ Some technologies I recently hacked with are Qt, C++, Python, Django, PHP, SCons
 			"""I used them for both artistic and professional purposes. """
 		),
 		('Mobile/Embedded',
-			"""I developed applications for Android using the Qt framework (C++ and QML). """
+#			"""This is a field on which I am currently self-training. """
+			"""I developed some applications for Android using the Qt framework (C++ and QML). """
+			"""I experimented with several WebApp frameworks for mobiles: JQuery mobile, AngularJS... """
+			"""This is my current ongoing self-training."""
 		),
 	],
 	publications = [
@@ -475,15 +585,15 @@ Some technologies I recently hacked with are Qt, C++, Python, Django, PHP, SCons
 				"""to meet agile development requirements. """+
 				"""The system was successfully implanted on Ford Ibérica, CASA, and Metro de Madrid. """,
 			),
-		Work(
-			title = "PyVitae",
-			url = "https://github.com/vokimon/vitae",
-			description =
-				"""PyVitae is a python script to define curriculum vitae using a simple """+
-				"""text based syntax and generating several outputs including html and pdf. """+
-				"""Like WiKo, it follows a write-once-generate-many principle. """+
-				"""This curriculum has been generated using it.""",
-			),
+#		Work(
+#			title = 'PyVitae',
+#			url = "https://github.com/vokimon/vitae",
+#			description =
+#				"""PyVitae is a python script to define curriculum vitae using a simple """+
+#				"""text based syntax and generating several outputs including html and pdf. """+
+#				"""Like WiKo, it follows a write-once-generate-many principle. """+
+#				"""This curriculum has been generated using it.""",
+#			),
 #		Work(
 #			title = "Bioscena",
 #			url = "",
@@ -509,6 +619,6 @@ import vitae, os, codecs
 outputbase = os.path.splitext(__file__)[0]
 codecs.open("%s.html"%outputbase,"w", encoding="utf8").write(myVitae.html())
 codecs.open("%s.tex"%outputbase, "w", encoding="utf8").write(myVitae.tex())
-#os.system("pdflatex %s"%outputbase)
+os.system("pdflatex %s"%outputbase)
 
 
