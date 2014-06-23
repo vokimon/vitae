@@ -19,7 +19,7 @@ class Encoder :
 
 	def unicode(self, string) :
 		if string.__class__ is unicode :  return string
-		return unicode(string,"utf8")
+		return string.decode("utf8")
 
 class HtmlEncoder(Encoder) :
 	"""
@@ -102,6 +102,8 @@ class Vitae(ConstrainedDict) :
 					languages = [],
 					publications = [],
 					portfolio = [],
+					awards = [],
+					courses = [],
 					skills = [],
 				),
 			)
@@ -124,6 +126,20 @@ class Education(ConstrainedDict) :
 				thesis = '',
 				topics = '',
 				activities = [],
+				),
+			)
+class Course(ConstrainedDict) :
+	def __init__(self, **params) :
+		ConstrainedDict.__init__(self, params,
+			requiredFields ="start title issuer duration".split(),
+			defaultValues = dict(
+				),
+			)
+class Award(ConstrainedDict) :
+	def __init__(self, **params) :
+		ConstrainedDict.__init__(self, params,
+			requiredFields ="year position contest work".split(),
+			defaultValues = dict(
 				),
 			)
 class Publication(ConstrainedDict) :
@@ -190,6 +206,22 @@ coursed at {\bf %(school)s}.
 Topics: %(topics)s""" 
 			if education.get('topics',False) else "")
 )%education
+
+def htmlWork(sample) :
+	return """
+<dt><span class='sampleTitle'>%(title)s</span>, <a href='%(url)s'>%(url)s</a></dt>
+<dd>
+<span class='sampleDescription'>%(description)s</span>
+</dd>
+"""%sample
+
+def texAward(award) :
+	return (r"""
+\item[%(year)s]
+{\bf %(position)s}
+at {\bf %(contest)s}
+with the work {\em %(work)s}."""
+)%award
 
 def htmlWork(sample) :
 	return """
@@ -410,7 +442,7 @@ def texVitae(curriculum) :
 \evensidemargin 0.5cm  %% Alto  Letter 27,81cm
 \textwidth      15.5cm
 \topmargin      0cm
-\textheight     22.5cm
+\textheight     20cm
 \parindent      2cm
 \parskip        2ex
 
@@ -427,21 +459,37 @@ def texVitae(curriculum) :
 \item[Nationality] %(nationality)s
 \item[E-mail] %(contactEmail)s
 \end{cvlist}
+
+\begin{cvlist}{Summary}
+\item[] %(summary)s
+\end{cvlist}
 """%curriculum + r"""
-\begin{cvlist}{Research Interests}
+\begin{cvlist}{Interests}
 \item[] """ + ", ".join(curriculum["interests"]) + r"""
 \end{cvlist}
+
+"""
+	result += r"""
+
+\begin{cvlist}{Language skills}
+"""
+	for language, level in curriculum['languages'].iteritems() :
+		result += "\\item[%s] %s\n"%(language.capitalize(), level)
+	result += r"""
+\end{cvlist}
+
 """
 	result += r"""
 \begin{cvlist}{Education}
 """ + "".join(texEducation(education) for education in curriculum['educations']) + r"""
 \end{cvlist}
 """
-	result += r"""
-\begin{cvlist}{Awards}
-\item[2006] Winner of the ACM Multimedia 2006 Open Source Software Competition with the CLAM framework.
+	result += (r"""
+\begin{cvlist}{Awards and Honors}
+"""+ ''.join(texAward(award) for award in curriculum['awards']) + r"""
 \end{cvlist}
-"""
+""") if curriculum['awards'] else ""
+
 	result += r"""
 \begin{cvlist}{Professional Experience}
 """
@@ -468,13 +516,6 @@ def texVitae(curriculum) :
 
 """
 	result += r"""
-\begin{cvlist}{Language skills}
-"""
-	for language, level in curriculum['languages'].iteritems() :
-		result += "\\item[%s] %s\n"%(language.capitalize(), level)
-	result += r"""
-\end{cvlist}
-
 \begin{cvlist}{Technical skills}
 """
 	for skill, description in curriculum['skills'] :
@@ -482,6 +523,16 @@ def texVitae(curriculum) :
 \item[%s]
 	%s
 """%(skill, description)
+	result += r"""
+\end{cvlist}
+
+\begin{cvlist}{Courses}
+"""
+	for course in curriculum['courses'] :
+		result += r"""
+\item[%(start)s]
+	{\bf %(title)s } provided by {\bf %(issuer)s} (%(duration)s)
+"""%course
 	result += r"""
 \end{cvlist}
 
