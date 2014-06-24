@@ -7,7 +7,6 @@ class ConstrainedDictTest(unittest.TestCase) :
 	def test_unexpectedParameterThrowsException(self) :
 		try:
 			ConstrainedDict(
-					{},
 					unexpected="value",
 				)
 			self.fail("Exception expected")
@@ -18,17 +17,15 @@ class ConstrainedDictTest(unittest.TestCase) :
 
 	def test_requiredParameter_notGivenThrows(self) :
 		try:
-			ConstrainedDict(dict(
-					),
-					requiredFields=[
-						"required"
-						],
+			ConstrainedDict(
+				requiredFields = ["required"],
 				)
 			self.fail("Exception expected")
 		except ConstrainedDict.MissingRequiredParameter, e :
 			self.assertEquals(
 				"Missing required parameter 'required' in 'ConstrainedDict'"
 				, str(e))
+
 	def test_requiredParameter_given(self) :
 		d = ConstrainedDict(
 			dict(
@@ -179,12 +176,13 @@ class ConstrainedDictTest(unittest.TestCase) :
 
 class TestDict ( ConstrainedDict ) :
 	def __init__(self, **params) :
-		ConstrainedDict.__init__(self, params,
+		ConstrainedDict.__init__(self,
 			requiredFields = "mandatory1 mandatory2".split(),
 			defaultValues = dict(
 				optional1="default1",
 				optional2="default2",
-				)
+				),
+			**params
 			)
 
 class ConcreteConstrainedDictTest(unittest.TestCase) :

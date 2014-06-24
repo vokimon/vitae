@@ -130,9 +130,10 @@ class TexEncoderTest(unittest.TestCase) :
 				)
 	class DummyConstrained(ConstrainedDict) :
 		def __init__(self, **params) :
-			ConstrainedDict.__init__(self, params,
+			ConstrainedDict.__init__(self,
 					requiredFields = "key1".split(),
 					defaultValues = dict(key2='default'),
+					**params
 			)
 	
 	def test_escape_givenAConstrainedDict(self) :

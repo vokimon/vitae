@@ -73,19 +73,21 @@ class ConstrainedDict(dict) :
 				self._context,
 				)
 
-	def __init__(self,  params, requiredFields=[], defaultValues={}, **kwd) :
-		super(ConstrainedDict, self).__init__()
+	def __init__(self,  params={}, requiredFields=[], defaultValues={}, **kwd) :
+		self._forceMustHaveParameters(kwd, requiredFields)
+		self._forceNoAlienParameters(kwd, requiredFields, defaultValues)
+		values = defaultValues.copy()
+		values.update(kwd)
+		dict.__init__(self, values)
 		self.__dict__ = self
-		params.update(kwd)
-		self._forceMustHaveParameters(params, requiredFields)
-		for key, defaultValue in self.iteritems() :
-			self[key] = self.get(key, defaultValue)
-		for key in params.keys() :
+
+	def _forceNoAlienParameters(self, parameters, requiredFields, defaultValues) :
+		for key in parameters.keys() :
 			if key in requiredFields: continue
 			if key in defaultValues: continue
-			raise ConstrainedDict.UnsupportedParameter(self.__class__.__name__, key)
-		self.update(defaultValues)
-		dict.__init__(self, **params)
+			raise ConstrainedDict.UnsupportedParameter(
+				self.__class__.__name__, key)
+
 	def _forceMustHaveParameters(self, parameters, requiredFields) :
 		for param in requiredFields :
 			try : parameters[param]
