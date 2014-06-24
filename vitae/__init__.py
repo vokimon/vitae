@@ -74,6 +74,8 @@ class ConstrainedDict(dict) :
 				)
 
 	def __init__(self,  params, requiredFields=[], defaultValues={}) :
+		super(ConstrainedDict, self).__init__()
+		self.__dict__ = self
 		self._forceMustHaveParameters(params, requiredFields)
 		for key, defaultValue in self.iteritems() :
 			self[key] = self.get(key, defaultValue)
@@ -395,29 +397,29 @@ a:link, a:visited, a:active, .pubAbstract {
 </p>
 """%dict(curriculum) + """
 <h2 id='interests'>Interests</h2>
-<p>""" + ", ".join(curriculum['interests'])+"""
+<p>""" + ", ".join(curriculum.interests)+"""
 </p>
 <h2 id='education'>Education</h2>
 <dl>
-""" + "".join(htmlEducation(education) for education in curriculum['educations']) + """
+""" + "".join(htmlEducation(education) for education in curriculum.educations) + """
 </dl>
 <h2 id='languages'>Languages</h2>
 <ul>
-""" + "".join(htmlLanguage(language,level) for language, level in curriculum['languages'].items()) + """
+""" + "".join(htmlLanguage(language,level) for language, level in curriculum.languages.items()) + """
 </ul>
 <h2 id='experience'>Experience</h2>
 <dl>
-""" + "".join(htmlPosition(position) for position in curriculum['positions']) + """
+""" + "".join(htmlPosition(position) for position in curriculum.positions) + """
 </dl>
 <h2 id='publications'>Publications</h2>
-""" + "".join(htmlPublication(publication) for publication in curriculum['publications']) + """
+""" + "".join(htmlPublication(publication) for publication in curriculum.publications) + """
 <h2 id='skills'>Skills</h2>
 <dl>
-""" + "".join(htmlSkill(skill,description) for skill, description in curriculum['skills']) + """
+""" + "".join(htmlSkill(skill,description) for skill, description in curriculum.skills) + """
 </dl>
 <h2 id='portfolio'>Portfolio</h2>
 <dl>
-""" + "".join(htmlWork(sample) for sample in curriculum['portfolio']) + """
+""" + "".join(htmlWork(sample) for sample in curriculum.portfolio) + """
 </dl>
 </div>
 </body>
@@ -465,7 +467,7 @@ def texVitae(curriculum) :
 \end{cvlist}
 """%curriculum + r"""
 \begin{cvlist}{Interests}
-\item[] """ + ", ".join(curriculum["interests"]) + r"""
+\item[] """ + ", ".join(curriculum.interests) + r"""
 \end{cvlist}
 
 """
@@ -473,7 +475,7 @@ def texVitae(curriculum) :
 
 \begin{cvlist}{Language skills}
 """
-	for language, level in curriculum['languages'].iteritems() :
+	for language, level in curriculum.languages.iteritems() :
 		result += "\\item[%s] %s\n"%(language.capitalize(), level)
 	result += r"""
 \end{cvlist}
@@ -481,19 +483,19 @@ def texVitae(curriculum) :
 """
 	result += r"""
 \begin{cvlist}{Education}
-""" + "".join(texEducation(education) for education in curriculum['educations']) + r"""
+""" + "".join(texEducation(education) for education in curriculum.educations) + r"""
 \end{cvlist}
 """
 	result += (r"""
 \begin{cvlist}{Awards and Honors}
-"""+ ''.join(texAward(award) for award in curriculum['awards']) + r"""
+"""+ ''.join(texAward(award) for award in curriculum.awards) + r"""
 \end{cvlist}
-""") if curriculum['awards'] else ""
+""") if curriculum.awards else ""
 
 	result += r"""
 \begin{cvlist}{Professional Experience}
 """
-	for position in curriculum['positions'] :
+	for position in curriculum.positions :
 		result += r"""
 \item[%(start)s-%(end)s]
 {\bf %(title)s} at
@@ -505,7 +507,7 @@ def texVitae(curriculum) :
 
 \begin{cvlist}{Publications}
 """
-	for publication in curriculum['publications'] :
+	for publication in curriculum.publications :
 		result += r"""
 \item[] {\sc %(author)s} %(year)s.
 '{\em %(title)s}'
@@ -518,7 +520,7 @@ def texVitae(curriculum) :
 	result += r"""
 \begin{cvlist}{Technical skills}
 """
-	for skill, description in curriculum['skills'] :
+	for skill, description in curriculum.skills :
 		result += r"""
 \item[%s]
 	%s
@@ -528,7 +530,7 @@ def texVitae(curriculum) :
 
 \begin{cvlist}{Courses}
 """
-	for course in curriculum['courses'] :
+	for course in curriculum.courses :
 		result += r"""
 \item[%(start)s]
 	{\bf %(title)s } provided by {\bf %(issuer)s} (%(duration)s)
@@ -539,9 +541,9 @@ def texVitae(curriculum) :
 \begin{cvlist}{Portfolio}
 """
 
-	for sample in curriculum['portfolio'] :
+	for sample in curriculum.portfolio :
 		result += "\\item[%(title)s]\n%(description)s\n"%sample
-		if sample['url'] : result += "\\footnote{\\href{%(url)s}{%(url)s}}\n"%sample
+		if sample.url : result += "\\footnote{\\href{%(url)s}{%(url)s}}\n"%sample
 	result += r"""
 \end{cvlist}
 
