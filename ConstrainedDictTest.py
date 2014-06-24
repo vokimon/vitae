@@ -6,9 +6,9 @@ from vitae import ConstrainedDict
 class ConstrainedDictTest(unittest.TestCase) :
 	def test_unexpectedParameterThrowsException(self) :
 		try:
-			ConstrainedDict(dict(
+			ConstrainedDict(
+					{},
 					unexpected="value",
-					)
 				)
 			self.fail("Exception expected")
 		except ConstrainedDict.UnsupportedParameter, e :
@@ -32,9 +32,9 @@ class ConstrainedDictTest(unittest.TestCase) :
 	def test_requiredParameter_given(self) :
 		d = ConstrainedDict(
 			dict(
-				required = "a value",
 				),
-			requiredFields = ["required"]
+			requiredFields = ["required"],
+			required = "a value",
 			)
 		self.assertEquals( dict(
 				required="a value"
@@ -43,9 +43,9 @@ class ConstrainedDictTest(unittest.TestCase) :
 	def test_requiredParameter_accessedAsAttribute(self) :
 		d = ConstrainedDict(
 			dict(
-				required = "a value",
 				),
-			requiredFields = ["required"]
+			requiredFields = ["required"],
+			required = "a value",
 			)
 		self.assertEquals( "a value", d.required)
 
@@ -62,13 +62,118 @@ class ConstrainedDictTest(unittest.TestCase) :
 	def test_optionalParameter_givenGetsGiven(self) :
 		d = ConstrainedDict( 
 			dict(
-				defaultValuedParameter = "given value",
 				),
 			defaultValues = dict(
 				defaultValuedParameter = "default value",
-			))
+				),
+			defaultValuedParameter = "given value",
+			)
 		self.assertEquals(dict(
 			defaultValuedParameter="given value",
+			), d)
+
+	def test_gettingAttribute_failsIfAlien(self) :
+		d = ConstrainedDict(dict(), dict())
+		try:
+			d.alien
+			self.fail("Exception expected")
+		except AttributeError as e :
+			self.assertEquals(
+				"'ConstrainedDict' object has no attribute 'alien'"
+				, str(e))
+
+	def test_gettingKey_failsIfAlien(self) :
+		d = ConstrainedDict(dict(), dict())
+		try:
+			d['alien']
+			self.fail("Exception expected")
+		except KeyError as e :
+			self.assertEquals(
+				"'alien'"
+				, str(e))
+
+	@unittest.skip("Not so constrained, to implement")
+	def test_settingAttribute_failsIfAlien(self) :
+		d = ConstrainedDict(dict(), dict())
+		try:
+			d.alien = "value"
+			self.fail("Exception expected")
+		except AttributeError as e :
+			self.assertEquals(
+				"'ConstrainedDict' object has no attribute 'alien'"
+				, str(e))
+
+	@unittest.skip("Not so constrained, to implement")
+	def test_settingKey_failsIfAlien(self) :
+		d = ConstrainedDict(dict(), dict())
+		try:
+			d['alien'] = "value"
+			self.fail("Exception expected")
+		except KeyError as e :
+			self.assertEquals(
+				"'alien'"
+				, str(e))
+
+	@unittest.skip("Not implemented")
+	def test_deletingAttribute_failsIfRequired(self) :
+		d = ConstrainedDict(
+			dict(
+				),
+			requiredFields = ["required"],
+			required = "a value",
+			)
+		try:
+			del d.required
+			self.fail("Exception expected")
+		except ConstrainedDict.MissingRequiredParameter, e :
+			self.assertEquals(
+				"Missing required parameter 'required' in 'ConstrainedDict'"
+				, str(e))
+
+	@unittest.skip("Not implemented")
+	def test_deletingKey_failsIfRequired(self) :
+		d = ConstrainedDict(
+			dict(
+				),
+			requiredFields = ["required"],
+			required = "a value",
+			)
+		try:
+			del d['required']
+			self.fail("Exception expected")
+		except ConstrainedDict.MissingRequiredParameter, e :
+			self.assertEquals(
+				"Missing required parameter 'required' in 'ConstrainedDict'"
+				, str(e))
+
+	@unittest.skip("Not implemented")
+	def test_deletingAttribute_setsToDefaultIfOptional(self) :
+		d = ConstrainedDict( 
+			dict(
+				),
+			defaultValues = dict(
+				defaultValuedParameter = "default value",
+				),
+			defaultValuedParameter = "given value",
+			)
+		del d.defaultValuedParameter
+		self.assertEquals(dict(
+			defaultValuedParameter="default value",
+			), d)
+
+	@unittest.skip("Not implemented")
+	def test_deletingKey_setsToDefaultIfOptional(self) :
+		d = ConstrainedDict( 
+			dict(
+				),
+			defaultValues = dict(
+				defaultValuedParameter = "default value",
+				),
+			defaultValuedParameter = "given value",
+			)
+		del d['defaultValuedParameter']
+		self.assertEquals(dict(
+			defaultValuedParameter="default value",
 			), d)
 
 
@@ -136,6 +241,10 @@ class ConcreteConstrainedDictTest(unittest.TestCase) :
 				"Unsuported parameter 'unexpected' in 'TestDict'"
 				, str(e))
 
+
+# To test (and implement) if required by the implementation
+# - deleting attributes and keys when optional
+# - deleting attributes and keys when required
 
 if __name__ == "__main__" :
 	unittest.main()

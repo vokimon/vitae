@@ -73,9 +73,10 @@ class ConstrainedDict(dict) :
 				self._context,
 				)
 
-	def __init__(self,  params, requiredFields=[], defaultValues={}) :
+	def __init__(self,  params, requiredFields=[], defaultValues={}, **kwd) :
 		super(ConstrainedDict, self).__init__()
 		self.__dict__ = self
+		params.update(kwd)
 		self._forceMustHaveParameters(params, requiredFields)
 		for key, defaultValue in self.iteritems() :
 			self[key] = self.get(key, defaultValue)
@@ -108,6 +109,7 @@ class Vitae(ConstrainedDict) :
 					courses = [],
 					skills = [],
 				),
+			**params
 			)
 
 class Position(ConstrainedDict) :
@@ -118,6 +120,7 @@ class Position(ConstrainedDict) :
 				end = 'Now',
 				description = "",
 				),
+			**params
 			)
 class Education(ConstrainedDict) :
 	def __init__(self, **params) :
@@ -129,6 +132,7 @@ class Education(ConstrainedDict) :
 				topics = '',
 				activities = [],
 				),
+			**params
 			)
 class Course(ConstrainedDict) :
 	def __init__(self, **params) :
@@ -136,6 +140,7 @@ class Course(ConstrainedDict) :
 			requiredFields ="start title issuer duration".split(),
 			defaultValues = dict(
 				),
+			**params
 			)
 class Award(ConstrainedDict) :
 	def __init__(self, **params) :
@@ -143,6 +148,7 @@ class Award(ConstrainedDict) :
 			requiredFields ="year position contest work".split(),
 			defaultValues = dict(
 				),
+			**params
 			)
 class Publication(ConstrainedDict) :
 	def __init__(self, **params) :
@@ -154,12 +160,14 @@ class Publication(ConstrainedDict) :
 				abstract = '',
 				video = '',
 				slides = '',
-				)
+				),
+			**params
 			)
 class Work(ConstrainedDict) :
 	def __init__(self, **params) :
 		ConstrainedDict.__init__(self, params,
 			requiredFields = "title url description".split(),
+			**params
 		)
 
 def htmlPosition(position) :
