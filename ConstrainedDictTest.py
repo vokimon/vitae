@@ -40,6 +40,15 @@ class ConstrainedDictTest(unittest.TestCase) :
 				required="a value"
 			), d)
 
+	def test_requiredParameter_accessedAsAttribute(self) :
+		d = ConstrainedDict(
+			dict(
+				required = "a value",
+				),
+			requiredFields = ["required"]
+			)
+		self.assertEquals( "a value", d.required)
+
 	def test_optionalParameter_notGivenGetsDefault(self) :
 		d = ConstrainedDict( 
 			{},
