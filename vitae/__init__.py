@@ -36,7 +36,7 @@ class HtmlEncoder(Encoder) :
 			encoded = encoded.replace(old, new)
 		return encoded
 
-class TexEncoder(HtmlEncoder) :
+class TexEncoder(Encoder) :
 	def escapeString(self, string) :
 		encoded = self.unicode(string)
 		substitutions = [
@@ -129,7 +129,7 @@ class Education(ConstrainedDict) :
 		ConstrainedDict.__init__(self, params,
 			requiredFields ="start degree school field".split(),
 			defaultValues = dict(
-				end = 'Ongoing',
+				end = 'Unfinished',
 				thesis = '',
 				topics = '',
 				activities = [],

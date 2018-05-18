@@ -25,8 +25,27 @@ I have strong experience using agile methodologies and open source tools and met
 Some technologies I recently hacked with are Qt, C++, Python, Django, PHP, SCons, JACK, ALSA, PortAudio, Linux, bash, OpenGL...
 I have been teaching, mostly to higher school students, since 1995,
 an activity I enjoy a lot, and I like to innovate about.
+""" and 
+"""I've been for a decade a profesor and a researcher on Audio and Music Software Engineering
+and an specialist in Agile and Free/Libre Open Source Software Development methods.
+I have been teaching mostly at Universitat Pompeu Fabra, but also other universities, an activity that I enjoy a lot.
+Currently I am involved in several cooperatives of the Social Economy,
+currently working at Som Energia and GuifiBaix SCCL,
+a local Guifi.net deployer.
+I also have many contacts and bounds to many other entities such as
+Som Connexio, Mes Opcions, Coop57, Pam a Pam...
+
+Although my formal education is mostly technical, my interests go on a wide range of topics
+from Biology and Physics to Politics, History, Economy and Philosophy.
+Indeed I have been always interested the social part of Computer Science,
+Free Software communities, its internal dynamics, and
+their struggle to reach the masses in rivalry with powerfull monopolies.
+After the 15M upraising in Barcelona, I decided to focus my efforts
+on constructing, supporting and promoting social economy iniciatives
+applying lessons learnt in the software community and, indeed learning a lot.
 """,
 	interests = [
+		"Cooperativism and Social Economy",
 		"Music software engineering",
 		"Music information retrieval",
 		"3D acoustics simulation",
@@ -43,13 +62,25 @@ an activity I enjoy a lot, and I like to innovate about.
 		),
 	positions = [
 		Position(
-			company = 'GuifiBaix',
+			company = 'Som Energia SCCL',
+			title = 'Developer',
+			start = 'Jan 2015',
+			description = 
+				"""Creating and organizing an agile IT team nearly from scratch, """
+				"""dealing and coordinating multiple external partners, """
+				"""managing multiple sources of priorities in an horizontal organization, """
+				"""working with a plethora of Python and Javascript technologies: """
+				"""OpenERP, Flask, Django, Angular, Mithril, Bootstrap, MDW, Asterisk..."""
+		),
+		Position(
+			company = 'GuifiBaix SCCL',
 			title = 'Founder and partner',
 			start = 'Jun 2013',
 			description = 
-				"""Creating and developing a business project for the cooperative, """
+				"""Inception and execution of a business model for the cooperative, """
 				"""Wired and wireless network deployments, and """
-				"""Web application development (P2P, Cloud services...)."""
+				"""Web application development (P2P, Cloud services, streaming...). """
+				"""Programming bussiness logic. """
 #				"""Won special mention as Best Enterprise Project 2013 at Prat de Llobregat."""
 		),
 		Position(
@@ -223,57 +254,9 @@ an activity I enjoy a lot, and I like to innovate about.
 	],
 	courses = [
 		Course(
-			issuer = "CQUID Universitat Pompeu Fabra",
-			title = "Pedagogical Support Sessions for the Pilot Course Migration to the Bologne Plan",
-			start = "May 2007",
-			duration = "80 hours, aprox",
-		),
-		Course(
-			issuer = "CQUID Universitat Pompeu Fabra",
-			title = "Educational and scientific dissemination, copyright, Creative Common licenses and repositories",
-			start = "Nov 2012",
-			duration = "3 hours",
-		),
-		Course(
-			issuer = "CQUID Universitat Pompeu Fabra",
-			title = "Reflexive learning as methodology to promote student motivation and creativity",
-			start = "Dec 2012",
-			duration = "3 hours",
-		),
-		Course(
-			issuer = "CQUID Universitat Pompeu Fabra",
-			title = "Educational methodologies: seminars, tutorship and workshops",
-			start = "Feb 2013",
-			duration = "6 hours",
-		),
-		Course(
-			issuer = "CQUID Universitat Pompeu Fabra",
-			title = "Educational methodologies: teaching large groups",
-			start = "Feb 2013",
-			duration = "6 hours",
-		),
-		Course(
-			issuer = "CQUID Universitat Pompeu Fabra",
-			title = "Collaborative Moore Method for Math teaching",
-			start = "Jun 2013",
-			duration = "2 hours",
-		),
-		Course(
-			issuer = "CQUID Universitat Pompeu Fabra",
-			title = "Theatre Techniques for the Classroom",
-			start = "Oct 2013",
-			duration = "12 hours",
-		),
-		Course(
 			issuer = "Federació de Cooperatives de Treball de Catalunya",
-			title = "Being a Co-operative Member",
-			start = "May 2014",
-			duration = "12 hours",
-		),
-		Course(
-			issuer = "Federació de Cooperatives de Treball de Catalunya",
-			title = "Creativity and innovation in social economy enterprises",
-			start = "May 2014",
+			title = "Project development for Co-operatives",
+			start = "Jun 2014",
 			duration = "12 hours",
 		),
 		Course(
@@ -284,9 +267,57 @@ an activity I enjoy a lot, and I like to innovate about.
 		),
 		Course(
 			issuer = "Federació de Cooperatives de Treball de Catalunya",
-			title = "Project development for Co-operatives",
-			start = "Jun 2014",
+			title = "Creativity and innovation in social economy enterprises",
+			start = "May 2014",
 			duration = "12 hours",
+		),
+		Course(
+			issuer = "Federació de Cooperatives de Treball de Catalunya",
+			title = "Being a Co-operative Member",
+			start = "May 2014",
+			duration = "12 hours",
+		),
+		Course(
+			issuer = "CQUID Universitat Pompeu Fabra",
+			title = "Theatre Techniques for the Classroom",
+			start = "Oct 2013",
+			duration = "12 hours",
+		),
+		Course(
+			issuer = "CQUID Universitat Pompeu Fabra",
+			title = "Collaborative Moore Method for Math teaching",
+			start = "Jun 2013",
+			duration = "2 hours",
+		),
+		Course(
+			issuer = "CQUID Universitat Pompeu Fabra",
+			title = "Educational methodologies: teaching large groups",
+			start = "Feb 2013",
+			duration = "6 hours",
+		),
+		Course(
+			issuer = "CQUID Universitat Pompeu Fabra",
+			title = "Educational methodologies: seminars, tutorship and workshops",
+			start = "Feb 2013",
+			duration = "6 hours",
+		),
+		Course(
+			issuer = "CQUID Universitat Pompeu Fabra",
+			title = "Reflexive learning as methodology to promote student motivation and creativity",
+			start = "Dec 2012",
+			duration = "3 hours",
+		),
+		Course(
+			issuer = "CQUID Universitat Pompeu Fabra",
+			title = "Educational and scientific dissemination, copyright, Creative Common licenses and repositories",
+			start = "Nov 2012",
+			duration = "3 hours",
+		),
+		Course(
+			issuer = "CQUID Universitat Pompeu Fabra",
+			title = "Pedagogical Support Sessions for the Pilot Course Migration to the Bologne Plan",
+			start = "May 2007",
+			duration = "80 hours, aprox",
 		),
 	],
 	awards = [
@@ -296,12 +327,12 @@ an activity I enjoy a lot, and I like to innovate about.
 			contest = "Best idea or project 2014, Ajuntament del Prat de Llobregat",
 			work = "GuifiBaix business plan",
 		),
-		Award(
-			year = "2009",
-			position = "Outstanding results",
-			contest = "Pilot Bologna Plan Course Migration at UPF",
-			work = "Software Engineering I",
-		),
+	#	Award(
+	#		year = "2009",
+	#		position = "Outstanding results",
+	#		contest = "Pilot Bologna Plan Course Migration at UPF",
+	#		work = "Software Engineering I",
+	#	),
 		Award(
 			year = "2006",
 			position = "Winner",
@@ -314,24 +345,29 @@ an activity I enjoy a lot, and I like to innovate about.
 			"""I have a deep knowledge on programming and scripting languages """
 			"""such  as C++, Python, PHP, Smalltallk, Java and Bash. """
 		),
-		('Web Standards',
-			"""I've been working on HTML5, CSS3, JQuery, XML, XPath, XSD, XQuery... """
-			"""I also have experience on building cross browser web pages and using older standards."""
+		('Desktop/Mobile Programming',
+			"""I am quite a fan of Qt technologies for building user interfaces. """
+			"""I also have used the lesser Tcl/Tk, Gtk and Fltk. """
+		),
+		('Web Programming',
+			"""I am experienced with HTML5/CSS3, XML, XPath, XSD, JSON, YAML... standards. """
+			"""I worked with different Javascript frontend frameworks such as JQuery, Mithril, Angular, React... """
+			"""I am experienced with backend programming, both in PHP and Python using frameworks such as Flask and Django. """
+			"""I managed basicly and deployed apps on Apache, Nginx and uWSGI. """
 		),
 		('Operating systems',
 			"""I've been working with several Linux flavors, mostly with Debian, SuSe, Fedora and Ubuntu. """
 			"""I tend to forget anything I learnt about Windows, but I could manage to make it work when needed. """
 			"""I just have very slight knowledge of MacOsX, just what I needed to barely have my Qt/POSIX apps working on it."""
 		),
-		('Networks',
-			"""I have experience programing network applications and web services (php, python, django) and setting up basic apache servers. """
-			"""I have been messing with the Guifi.net project dealing with routers, wireless antennas, IP6 and qMp (mesh configurations). """
-		),
 		('Databases',
 			"""I am an experienced SQL programmer. """
-			"""I have used API's such as ADOdb, DAO and ODBC. """
-			"""I have experience administrating MySql databases. """
+			"""I have used ORM's such as ADOdb, DAO, ODBC, PonyORM, SQLAlchemy. """
+			"""I have experience administrating MySql and Postgresql databases. """
 			"""I have theoretical knowledge on the internal implementation of distributed database managers. """
+		),
+		('Networks',
+			"""I have been messing with the Guifi.net project dealing with routers, wireless antennas, IP6 and qMp (mesh configurations). """
 		),
 		('Sound',
 			"""I've been involved on the development of an audio and music framework """
@@ -352,12 +388,12 @@ an activity I enjoy a lot, and I like to innovate about.
 			"""I have experience using Gimp (PaintShop equivalent) and Inkscape (Freehand/Illustrator equivalent). """
 			"""I used them for both artistic and professional purposes. """
 		),
-		('Mobile/Embedded',
+#		('Mobile/Embedded',
 #			"""This is a field on which I am currently self-training. """
-			"""I developed some applications for Android using the Qt framework (C++ and QML). """
-			"""I experimented with several WebApp frameworks for mobiles: JQuery mobile, AngularJS... """
-			"""This is my current ongoing self-training."""
-		),
+#			"""I developed some applications for Android using the Qt framework (C++ and QML). """
+#			"""I experimented with several WebApp frameworks for mobiles: JQuery mobile, AngularJS... """
+#			"""This is my current ongoing self-training."""
+#		),
 	],
 	publications = [
 		Publication(
@@ -600,25 +636,22 @@ an activity I enjoy a lot, and I like to innovate about.
 #				"""Like WiKo, it follows a write-once-generate-many principle. """+
 #				"""This curriculum has been generated using it.""",
 #			),
-#		Work(
-#			title = "Bioscena",
-#			url = "",
-#			description =
-#				"""Bioscena was a multiplatform C++ environment to simulate evolutive biologic system. """+
-#				"""The system was highly configurable to simulate different biotopes and  """+
-#				"""different physical and biological rules. """+
-#				"""You can play with differents mechanisms for genic expression and phenotypical interaction. """+
-#				"""Some real-like genic expression mechanism were included such as  """+
-#				"""codon decoding, intron and exon zones, promoter zones, multiple chromosomes """+
-#				"""several kinds of mutations... """+
-#				"""By monitoring and analyzing the system output you can get insight about """+
-#				"""the emergent life features such the aparition self-reproducing beings, """+
-#				"""the self regulation of mortality, """+
-#				"""some interactions (family support, depredation, and several kinds of symbiosy), """+
-#				"""and adaptation to short term periodic changes on the environment. """+
-#				""),
+		Work(
+			title = "Bioscena",
+			url = "https://github.com/vokimon/bioscena",
+			description =
+				"""A computer simulation of evolutive biological systems developed as my Technical Engineering Project. """
+				"""A multiplatform implementation in C++, highly configurable to simulate """
+				"""different scenarios, varying physical and biological rules. """
+				"""You can play with genic expresion mechanisms and phenotipical interactions """
+				"""including codon decoding, intron and exon zones, promoter zones, multiple chromosomes """
+				"""several kinds of mutations... """
+				"""Simulations provide insight of emergent life features such as """
+				"""self regulation of mortality and aging, """
+				"""family bounds, depredation, symbiosy, """
+				"""and adaptation to periodical environment changes (day/night, seasons, longer cycles). """
+				""),
 		],
-			
 )
 
 import vitae, os, codecs
