@@ -302,29 +302,29 @@ awards:
   work: "CLAM framework"
 
 skills:
-  'Programming Languages': |
+  Programming Languages: |
         I have a deep knowledge on programming and scripting languages
         such  as C++, Python, PHP, Smalltallk, Java and Bash.
-  'Desktop/Mobile Programming': |
+  Desktop/Mobile Programming: |
         I am quite a fan of Qt technologies for building user interfaces.
         I also have used the lesser Tcl/Tk, Gtk and Fltk.
-  'Web Programming': |
+  Web Programming: |
         I am experienced with HTML5/CSS3, XML, XPath, XSD, JSON, YAML... standards.
         I worked with different Javascript frontend frameworks such as JQuery, Mithril, Angular, React...
         I am experienced with backend programming, both in PHP and Python using frameworks such as Flask and Django.
         I managed basicly and deployed apps on Apache, Nginx and uWSGI.
-  'Operating systems': |
+  Operating systems: |
         I've been working with several Linux flavors, mostly with Debian, SuSe, Fedora and Ubuntu.
         I tend to forget anything I learnt about Windows, but I could manage to make it work when needed.
         I just have very slight knowledge of MacOsX, just what I needed to barely have my Qt/POSIX apps working on it.
-  'Databases': |
+  Databases: |
         I am an experienced SQL programmer.
         I have used ORM's such as ADOdb, DAO, ODBC, PonyORM, SQLAlchemy.
         I have experience administrating MySql and Postgresql databases.
         I have theoretical knowledge on the internal implementation of distributed database managers.
-  'Networks': |
+  Networks: |
         I have been messing with the Guifi.net project dealing with routers, wireless antennas, IP6 and qMp (mesh configurations).
-  'Sound': |
+  Sound: |
         I've been involved on the development of an audio and music framework
         involving advanced real-time signal processing and
         multiplatform audio hardware programming.
@@ -332,15 +332,15 @@ skills:
         I have experience setting up MIDI networks.
         I have a deep knowledge of the Linux audio infrastructure (ALSA, Jack...)
         I have have experience programing plugins and hosts for different plugin platforms: Ladspa, Lv2, Vst, and AudioUnits.
-  '3D Programming': |
+  3D Programming: |
         I have experience programing the OpenGL API.
         I experience on programming raster, shading and texturization routines.
         I have some notions on modeling and animating scenes.
         I have experience on modeling languages such as PovRay.
-  '2D Graphics': |
+  2D Graphics: |
         I have experience using Gimp (PaintShop equivalent) and Inkscape (Freehand/Illustrator equivalent).
         I used them for both artistic and professional purposes.
-#  'Mobile/Embedded':
+#  Mobile/Embedded:
 #       This is a field on which I am currently self-training.
 #       I developed some applications for Android using the Qt framework (C++ and QML).
 #       I experimented with several WebApp frameworks for mobiles: JQuery mobile, AngularJS...
@@ -414,94 +414,86 @@ publications:
   notes: Proceedings of the 7th International Linux Audio Conference (LAC09); April 2009; Parma, Italy.
   video: http://lac.linuxaudio.org/2009/cdm/Thursday/05_Arumi/index.html
 -
-  author: 'Arumí, P. Amatriain, X. García, D.'
+  author: Arumí, P. Amatriain, X. García, D.
   year: '2008'
-  title: 'A Framework for Efficient and Rapid Development of Cross-platform Audio Applications'
-  notes: 'ACM Multimedia Systems Journal; 14(1) June 2008'
+  title: A Framework for Efficient and Rapid Development of Cross-platform Audio Applications
+  notes: ACM Multimedia Systems Journal; 14(1) June 2008
 -
-  author: 'García, D. Arumí, P. Amatriain, X.'
+  author: García, D. Arumí, P. Amatriain, X.
   year: '2007'
-  title: 'Visual prototyping of audio applications'
-  notes: 'Proceedings of Linux Audio Conference 2007; Berlin; Germany'
+  title: Visual prototyping of audio applications
+  notes: Proceedings of Linux Audio Conference 2007; Berlin; Germany
 -
-  author: 'Arumí, P. García, D. Amatriain, X.'
+  author: Arumí, P. García, D. Amatriain, X.
   year: '2006'
-  title: 'A Data Flow Pattern Language for Audio and Music Computing'
-  notes: 'Proceedings of Pattern Languages of Programs 2006; Portland, Oregon'
+  title: A Data Flow Pattern Language for Audio and Music Computing
+  notes: Proceedings of Pattern Languages of Programs 2006; Portland, Oregon
   url: "dataflow_patterns_plop06.pdf"
 -
-  author: 'Amatriain, X. Arumí, P. García, D.'
+  author: Amatriain, X. Arumí, P. García, D.
   year: '2006'
-  title: 'CLAM: A Framework for Efficient and Rapid Development of Cross-platform Audio Applications'
-  notes: 'Proceedings of ACM Multimedia 2006; Santa Barbara, CA'
+  title: "CLAM: A Framework for Efficient and Rapid Development of Cross-platform Audio Applications"
+  notes: Proceedings of ACM Multimedia 2006; Santa Barbara, CA
 -
-  author: 'Arumí, P. Sordo, M. García, D. Amatriain, X.'
+  author: Arumí, P. Sordo, M. García, D. Amatriain, X.
   year: '2006'
-  title: 'Testfarm, una eina per millorar el desenvolupament del programari lliure'
-  notes: 'Proceedings of V Jornades de Programari Lliure; Barcelona'
+  title: Testfarm, una eina per millorar el desenvolupament del programari lliure
+  notes: Proceedings of V Jornades de Programari Lliure; Barcelona
 -
-  author: 'García, D. Arumí, P. Amatriain, X.'
+  author: García, D. Arumí, P. Amatriain, X.
   year: '2006'
   title: Extracció d'acords amb l'Anotador de Música de CLAM
-  notes: 'Proceedings of V Jornades de Programari Lliure; Barcelona'
+  notes: Proceedings of V Jornades de Programari Lliure; Barcelona
 -
-  author: 'Amatriain, X. Massaguer, J. García, D. Mosquera, I.'
+  author: Amatriain, X. Massaguer, J. García, D. Mosquera, I.
   year: '2005'
-  title: 'The CLAM Annotator: A Cross-platform Audio Descriptors Editing Tool'
-  notes: 'Poster presented at 6th International Conference on Music Information Retrieval; London, UK'
+  title: "The CLAM Annotator: A Cross-platform Audio Descriptors Editing Tool"
+  notes: Poster presented at 6th International Conference on Music Information Retrieval; London, UK
 -
-  author: 'Cano, P. Koppenberger, M. Wack, N. G. Mahedero, J. Masip, J. Celma, O. García, D. Gómez, E. Gouyon, F. Guaus, E. Herrera, P. Massaguer, J. Ong, B. Ramírez, M. Streich, S. Serra, X.'
+  author: Cano, P. Koppenberger, M. Wack, N. G. Mahedero, J. Masip, J. Celma, O. García, D. Gómez, E. Gouyon, F. Guaus, E. Herrera, P. Massaguer, J. Ong, B. Ramírez, M. Streich, S. Serra, X.
   year: '2005'
-  title: 'An Industrial-Strength Content-based Music Recommendation System'
-  notes: 'Proceedings of 28th Annual International ACM SIGIR Conference; Salvador, Brazil'
+  title: An Industrial-Strength Content-based Music Recommendation System
+  notes: Proceedings of 28th Annual International ACM SIGIR Conference; Salvador, Brazil
 -
-  author: 'Cano, P. Koppenberger, M. Wack, N. G. Mahedero, J. Aussenac, T. Marxer, R. Masip, J. Celma, O. García, D. Gómez, E. Gouyon, F. Guaus, E. Herrera, P. Massaguer, J. Ong, B. Ramírez, M. Streich, S. Serra, X.'
+  author: Cano, P. Koppenberger, M. Wack, N. G. Mahedero, J. Aussenac, T. Marxer, R. Masip, J. Celma, O. García, D. Gómez, E. Gouyon, F. Guaus, E. Herrera, P. Massaguer, J. Ong, B. Ramírez, M. Streich, S. Serra, X.
   year: '2005'
-  title: 'Content-based Music Audio Recommendation'
-  notes: 'Proceedings of ACM Multimedia 2005; Singapore, Singapore'
+  title: Content-based Music Audio Recommendation
+  notes: Proceedings of ACM Multimedia 2005; Singapore, Singapore
 -
-  author: 'Herrera, P. Celma, O. Massaguer, J. Cano, P. Gómez, E. Gouyon, F. Koppenberger, M. García, D. G. Mahedero, J. Wack, N.'
+  author: Herrera, P. Celma, O. Massaguer, J. Cano, P. Gómez, E. Gouyon, F. Koppenberger, M. García, D. G. Mahedero, J. Wack, N.
   year: '2005'
-  title: 'Mucosa: a music content semantic annotator'
-  notes: 'Proceedings of 6th International Conference on Music Information Retrieval; London, UK'
+  title: "Mucosa: a music content semantic annotator"
+  notes: Proceedings of 6th International Conference on Music Information Retrieval; London, UK
 -
-  author: 'Arumí, P. García, D. Amatriain, X.'
+  author: Arumí, P. García, D. Amatriain, X.
   year: '2003'
-  title: 'CLAM, Una llibreria lliure per Audio i Música'
-  notes: 'Proceedings of II Jornades de Software Lliure; Barcelona'
+  title: CLAM, Una llibreria lliure per Audio i Música
+  notes: Proceedings of II Jornades de Software Lliure; Barcelona
 -
-  author: 'Celma, O. Gómez, E. Janer, J. Gouyon, F. Herrera, P. García, D.'
+  author: Celma, O. Gómez, E. Janer, J. Gouyon, F. Herrera, P. García, D.
   year: '2004'
-  title: 'Tools for Content-Based Retrieval and Transformation of Audio Using MPEG-7: The SPOffline and the MDTools'
-  notes: 'Proceedings of 25th International AES Conference; London, UK'
+  title: "Tools for Content-Based Retrieval and Transformation of Audio Using MPEG-7: The SPOffline and the MDTools"
+  notes: Proceedings of 25th International AES Conference; London, UK
 -
-  author: 'García, D.'
+  author: García, D.
   year: '2002'
   title: Suport de XML/MPEG-7 per una llibreria de processat d'àudio i música.
-  notes: 'Enginyeria La Salle. Barcelona'
+  notes: Enginyeria La Salle. Barcelona
 -
-  author: 'Amatriain, X. de Boer, M. Robledo, E. García, D.'
+  author: Amatriain, X. de Boer, M. Robledo, E. García, D.
   year: '2002'
-  title: 'CLAM: An OO Framework for Developing Audio and Music Applications'
-  notes: 'Proceedings of 17th Annual ACM Conference on Object-Oriented Programming, Systems, Languages and Applications. Seattle, WA, USA'
+  title: "CLAM: An OO Framework for Developing Audio and Music Applications"
+  notes: Proceedings of 17th Annual ACM Conference on Object-Oriented Programming, Systems, Languages and Applications. Seattle, WA, USA
 -
-  author: 'García, D. Amatriain, X.'
+  author: García, D. Amatriain, X.
   year: '2001'
-  title: 'XML as a means of control for audio processing, synthesis and analysis'
-  notes: 'Proceedings of MOSART Workshop on Current Research Directions in Computer Music. Barcelona'
+  title: XML as a means of control for audio processing, synthesis and analysis
+  notes: Proceedings of MOSART Workshop on Current Research Directions in Computer Music. Barcelona
 
 portfolio:
 -
-  title: 'CLAM (C++ Library of Audio and Music)'
-  url: 'http://clam-project.org'
-  description: >-
-    Being one of the core developers I have been involved
-    in most of the aspects of that awarded free software project.
-    XML support, GUI, audio back-end's, architecture, reflection,
-    processing algorithms, quality assurance...
--
-  title: "My technical blog and web page"
-  url: "http://canvoki.net/coder"
+  title: My technical blog and web page
+  url: http://canvoki.net/coder
   description: >-
     Daily discussion on technical stuff I work on
     My technical web page contains some tutorials and
@@ -509,16 +501,24 @@ portfolio:
     an SConstruct tool to support Qt4,
     an UML Use Case diagram generator,
     a continuous integration efficiency tracker...
-#-
-#  title: Course materials
-#  url: http://canvoki.net/docencia.html
-#  description: >-
-#    A compilation of most of the material elaborated for the courses I teach.
 -
   title: Personal GitHub page
   url: http://github.com/vokimon
   description: >-
     Several projects I maintain in GitHub and public contributions to other projects hosted there.
+-
+  title: CLAM (C++ Library of Audio and Music)
+  url: http://clam-project.org
+  description: >-
+    Being one of the core developers I have been involved
+    in most of the aspects of that awarded free software project:
+    XML support, GUI, audio back-end's, architecture, reflection,
+    processing algorithms, quality assurance...
+#-
+#  title: Course materials
+#  url: http://canvoki.net/docencia.html
+#  description: >-
+#    A compilation of most of the material elaborated for the courses I teach.
 -
   title: WiKo (The wiki compiler)
   url: 'http://wiko.sourceforge.net'
@@ -548,14 +548,14 @@ portfolio:
 #    Besides developing the product, I deployed the company development infrastructure
 #    to meet agile development requirements.
 #    The system was successfully implanted on Ford Ibérica, CASA, and Metro de Madrid.
--
-  title: PyVitae
-  url: https://github.com/vokimon/vitae
-  description: >-
-    PyVitae is a python script to define curriculum vitae using a simple 
-    text based syntax and generating several outputs including html and pdf.
-    Like WiKo, it follows a write-once-generate-many principle.
-    This curriculum has been generated using it.
+#-
+#  title: PyVitae
+#  url: https://github.com/vokimon/vitae
+#  description: >-
+#    PyVitae is a python script to define curriculum vitae using a simple 
+#    text based syntax and generating several outputs including html and pdf.
+#    Like WiKo, it follows a write-once-generate-many principle.
+#    This curriculum has been generated using it.
 -
   title: Bioscena
   url: https://github.com/vokimon/bioscena
