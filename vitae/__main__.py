@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from vitae import Vitae, Position, Education, Publication, Work, Course, Award
+from . import Vitae, Position, Education, Publication, Work, Course, Award
 from yamlns import namespace as ns
-import vitae, os, codecs, sys
+import os, codecs, sys
 
 def fromYamlFile(filename):
 	data = ns.load(filename)
