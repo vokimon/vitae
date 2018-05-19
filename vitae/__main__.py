@@ -16,11 +16,13 @@ def fromYamlFile(filename):
 	data.skills = [item for item in data.skills.items()]
 	return  Vitae(**data)
 
-outputbase = os.path.splitext(sys.argv[1])[0]
-myVitae = fromYamlFile('{}.yaml'.format(outputbase))
+def main():
+	outputbase = os.path.splitext(sys.argv[1])[0]
+	myVitae = fromYamlFile('{}.yaml'.format(outputbase))
 
-codecs.open("%s.html"%outputbase,"w", encoding="utf8").write(myVitae.html())
-codecs.open("%s.tex"%outputbase, "w", encoding="utf8").write(myVitae.tex())
-os.system("pdflatex %s"%outputbase)
+	codecs.open("%s.html"%outputbase,"w", encoding="utf8").write(myVitae.html())
+	codecs.open("%s.tex"%outputbase, "w", encoding="utf8").write(myVitae.tex())
+	os.system("pdflatex %s"%outputbase)
 
-
+if __name__ == '__main__':
+	main()
