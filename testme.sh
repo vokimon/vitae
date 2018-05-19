@@ -1,5 +1,5 @@
 #!/bin/bash
 
-./UnitTests.py && ./davidgarcia-full.py > /dev/null && git diff --exit-code ./davidgarcia-full.tex ./davidgarcia-full.html && echo ALL OK!! || echo FAILURE!!!
+./setup.py test && python vitae/__main__.py davidgarcia-full > /dev/null && git diff --exit-code ./davidgarcia-full.tex ./davidgarcia-full.html && echo ALL OK!! || echo FAILURE!!!
 
 
