@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from . import Vitae, Position, Education, Publication, Work, Course, Award
+from vitae import Vitae, Position, Education, Publication, Work, Course, Award
 from yamlns import namespace as ns
 import os, codecs, sys
 
