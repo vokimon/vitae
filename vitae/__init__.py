@@ -4,7 +4,7 @@
 class Encoder :
 	"""Encodes strings in a structure of dictionary like objects and sequences"""
 	def escape(self, object) :
-		if isinstance(object, basestring) : return self.escapeString(object)
+		if isinstance(object, str) : return self.escapeString(object)
 		if isinstance(object, dict) : return self.escapeDict(object)
 		return self.escapeSeq(object)
 
@@ -15,10 +15,11 @@ class Encoder :
 		return input.__class__(
 			**dict( 
 				(key, self.escape(value) )
-				for key, value in input.iteritems()) )
+				for key, value in input.items()) )
 
 	def unicode(self, string) :
-		if string.__class__ is unicode :  return string
+		if hasattr(string, 'encode'):
+			return string
 		return string.decode("utf8")
 
 class HtmlEncoder(Encoder) :
@@ -485,7 +486,7 @@ def texVitae(curriculum) :
 
 \begin{cvlist}{Language skills}
 """
-	for language, level in curriculum.languages.iteritems() :
+	for language, level in curriculum.languages.items() :
 		result += "\\item[%s] %s\n"%(language.capitalize(), level)
 	result += r"""
 \end{cvlist}
