@@ -184,122 +184,122 @@ positions:
 
 educations:
 -
-  school: "Universitat Pompeu Fabra"
-  degree: "PhD"
-  field: "Information, Communication and Audiovisual Media Technologies"
+  school: Universitat Pompeu Fabra
+  degree: PhD
+  field: Information, Communication and Audiovisual Media Technologies
   start: "2007"
   thesis: "Proposal: Relating audio and 3D scenarios in audiovisual productions."
 -
-  school: "Universitat Pompeu Fabra"
-  degree: "Master"
-  field: "Information, Communication and Audiovisual Media Technologies"
+  school: Universitat Pompeu Fabra
+  degree: Master
+  field: Information, Communication and Audiovisual Media Technologies
   start: "2006"
   end: "2007"
   thesis: "Thesis: Visual Prototyping for Audio Applications."
-  topics: "Audio Software Engineering, Frameworks, Domain Specific Languages, Prototyping tools"
+  topics: Audio Software Engineering, Frameworks, Domain Specific Languages, Prototyping tools
   activities:
   - Grup de Tecnologia Musical (MTG)
 -
-  school: "Enginyeria la Salle, Universitat Ramon Llull"
-  degree: "Engineering"
-  field: "Computer Science"
+  school: Enginyeria la Salle, Universitat Ramon Llull
+  degree: Engineering
+  field: Computer Science
   start: "1997"
   end: "2002"
   thesis: "Final Career Project: XML support for an audio framework."
-  topics: "XML, C++ template metaprogramming, Audio processing, Frameworks design"
+  topics: XML, C++ template metaprogramming, Audio processing, Frameworks design
   activities:
   - Departament d'Acústica
   - Curs d'Informàtica Musical
 -
-  school: "Enginyeria la Salle, Universitat Ramon Llull"
-  degree: "Technical Engineering"
-  field: "Computer Science"
+  school: Enginyeria la Salle, Universitat Ramon Llull
+  degree: Technical Engineering
+  field: Computer Science
   start: "1993"
   end: "1997"
   thesis: "Final Career Work: Bioscena, an evolutionary environment with interaction among individuals."
-  topics: "Artificial Life, Genetic algorithms, Advanced OO Design"
+  topics: Artificial Life, Genetic algorithms, Advanced OO Design
   activities:
   - Departament d'Informàtica
 -
-  school: "Col·legi Llor (Sant Boi de Llobregat)"
-  degree: "BUP/COU (Bachelor)"
-  field: "Scientific/Sanitary"
+  school: Col·legi Llor (Sant Boi de Llobregat)
+  degree: BUP/COU (Bachelor)
+  field: Scientific/Sanitary
   start: "1988"
   end: "1993"
 
 courses:
 -
-  issuer: "Federació de Cooperatives de Treball de Catalunya"
-  title: "Project development for Co-operatives"
+  issuer: Federació de Cooperatives de Treball de Catalunya
+  title: Project development for Co-operatives
   start: Jun 2014
-  duration: "12 hours"
+  duration: 12 hours
 -
-  issuer: "Federació de Cooperatives de Treball de Catalunya"
-  title: "Treasury Management for Co-operatives"
+  issuer: Federació de Cooperatives de Treball de Catalunya
+  title: Treasury Management for Co-operatives
   start: Jun 2014
-  duration: "12 hours"
+  duration: 12 hours
 -
-  issuer: "Federació de Cooperatives de Treball de Catalunya"
-  title: "Creativity and innovation in social economy enterprises"
+  issuer: Federació de Cooperatives de Treball de Catalunya
+  title: Creativity and innovation in social economy enterprises
   start: May 2014
-  duration: "12 hours"
+  duration: 12 hours
 -
-  issuer: "Federació de Cooperatives de Treball de Catalunya"
-  title: "Being a Co-operative Member"
+  issuer: Federació de Cooperatives de Treball de Catalunya
+  title: Being a Co-operative Member
   start: May 2014
-  duration: "12 hours"
+  duration: 12 hours
 -
-  issuer: "CQUID Universitat Pompeu Fabra"
-  title: "Theatre Techniques for the Classroom"
+  issuer: CQUID Universitat Pompeu Fabra
+  title: Theatre Techniques for the Classroom
   start: Oct 2013
-  duration: "12 hours"
+  duration: 12 hours
 -
-  issuer: "CQUID Universitat Pompeu Fabra"
-  title: "Collaborative Moore Method for Math teaching"
+  issuer: CQUID Universitat Pompeu Fabra
+  title: Collaborative Moore Method for Math teaching
   start: Jun 2013
-  duration: "2 hours"
+  duration: 2 hours
 -
-  issuer: "CQUID Universitat Pompeu Fabra"
+  issuer: CQUID Universitat Pompeu Fabra
   title: "Educational methodologies: teaching large groups"
   start: Feb 2013
-  duration: "6 hours"
+  duration: 6 hours
 -
-  issuer: "CQUID Universitat Pompeu Fabra"
+  issuer: CQUID Universitat Pompeu Fabra
   title: "Educational methodologies: seminars, tutorship and workshops"
   start: Feb 2013
-  duration: "6 hours"
+  duration: 6 hours
 -
-  issuer: "CQUID Universitat Pompeu Fabra"
-  title: "Reflexive learning as methodology to promote student motivation and creativity"
+  issuer: CQUID Universitat Pompeu Fabra
+  title: Reflexive learning as methodology to promote student motivation and creativity
   start: Dec 2012
-  duration: "3 hours"
+  duration: 3 hours
 -
-  issuer: "CQUID Universitat Pompeu Fabra"
-  title: "Educational and scientific dissemination, copyright, Creative Common licenses and repositories"
+  issuer: CQUID Universitat Pompeu Fabra
+  title: Educational and scientific dissemination, copyright, Creative Common licenses and repositories
   start: Nov 2012
-  duration: "3 hours"
+  duration: 3 hours
 -
-  issuer: "CQUID Universitat Pompeu Fabra"
-  title: "Pedagogical Support Sessions for the Pilot Course Migration to the Bologne Plan"
+  issuer: CQUID Universitat Pompeu Fabra
+  title: Pedagogical Support Sessions for the Pilot Course Migration to the Bologne Plan
   start: May 2007
-  duration: "80 hours, aprox"
+  duration: 80 hours, aprox
 
 awards:
 -
   year: "2014"
-  position: "Special Mention"
-  contest: "Best idea or project 2014, Ajuntament del Prat de Llobregat"
-  work: "GuifiBaix business plan"
+  position: Special Mention
+  contest: Best idea or project 2014, Ajuntament del Prat de Llobregat
+  work: GuifiBaix business plan
 -
   year: "2009"
-  position: "Outstanding results"
-  contest: "Pilot Bologna Plan Course Migration at UPF"
-  work: "Software Engineering I"
+  position: Outstanding results
+  contest: Pilot Bologna Plan Course Migration at UPF
+  work: Software Engineering I
 -
   year: "2006"
-  position: "Winner"
-  contest: "ACM Multimedia 2006 Open Source Software Competition"
-  work: "CLAM framework"
+  position: Winner
+  contest: ACM Multimedia 2006 Open Source Software Competition
+  work: CLAM framework
 
 skills:
   Programming Languages: |
@@ -337,9 +337,10 @@ skills:
         I experience on programming raster, shading and texturization routines.
         I have some notions on modeling and animating scenes.
         I have experience on modeling languages such as PovRay.
-  2D Graphics: |
+  Art/Design: |
         I have experience using Gimp (PaintShop equivalent) and Inkscape (Freehand/Illustrator equivalent).
         I used them for both artistic and professional purposes.
+        Bare notions of Blender (3D Animation).
 #  Mobile/Embedded:
 #       This is a field on which I am currently self-training.
 #       I developed some applications for Android using the Qt framework (C++ and QML).
@@ -348,11 +349,11 @@ skills:
 
 publications:
 -
-  title: "Layout Remapping Tool for Multichannel Audio Productions"
-  author: "Tim Schmele, David García-Garzón, Umut Sayin, Davide Scaini and Daniel Arteaga"
-  notes: "134th Audio Engineering Society Convention; May 2013; Parma, Italy"
+  title: Layout Remapping Tool for Multichannel Audio Productions
+  author: Tim Schmele, David García-Garzón, Umut Sayin, Davide Scaini and Daniel Arteaga
+  notes: 134th Audio Engineering Society Convention; May 2013; Parma, Italy
   year: "2013"
-  url: "http://www.aes.org/e-lib/browse.cfm?elib=16807"
+  url: http://www.aes.org/e-lib/browse.cfm?elib=16807
   abstract: |
     Several multichannel audio formats are present in the recording industry with reduced interoperability among the formats.
     This diversity of formats leaves the end user with limited accessibility to content and/or audience.
@@ -365,46 +366,46 @@ publications:
     Simulations depict that after several consecutive conversions the results exhibit a decrease in spatial accuracy and increase in overall gain.
     This suggests that consecutive conversions should be avoided and only a single conversion from the originally rendered material should be done.
 -
-  title: "IPyCLAM Enpowering CLAM with Python"
-  author: "David Garcia Garzón and Xavier Serra Roman"
-  notes: "11th Linux Audio Conference 2013; University of Music and Performing Arts; Graz, Austria; May 2013"
+  title: IPyCLAM Enpowering CLAM with Python
+  author: David Garcia Garzón and Xavier Serra Roman
+  notes: 11th Linux Audio Conference 2013; University of Music and Performing Arts; Graz, Austria; May 2013
   year: "2013"
-  url: "http://lac.linuxaudio.org/2013/papers/54.pdf"
-  slides: "http://lac.linuxaudio.org/2013/download/lac2013_ipyclam-presentation.pdf"
+  url: http://lac.linuxaudio.org/2013/papers/54.pdf
+  slides: http://lac.linuxaudio.org/2013/download/lac2013_ipyclam-presentation.pdf
   abstract: This paper introduces ipyclam, a new way of manipulating networks in CLAM (C++ Library for Audio and Music) by using the Python language. This extends the power of the framework in many ways. Some of them are exploring and manipulating live processing networks via interactive Python shells, or extending the power of visual prototyping in CLAM by adding elaborated application logic and user interfaces with PyQt/PySide. The described Python API, ipyclam, by redefining the back-end layer, can be reused to control other patching based systems such as JACK, gAlan...
 -
-  author: "D. Garcia, D. Arteaga,  J.  Usher, T. Mateos"
-  title: "Determining a room geometry from its impulse response"
+  author: D. Garcia, D. Arteaga,  J.  Usher, T. Mateos
+  title: Determining a room geometry from its impulse response
   year: "2010"
-  notes: "Presented at Internoise10, Lisbon, June 2010."
+  notes: Presented at Internoise10, Lisbon, June 2010.
   abstract: This paper reports on the development of a system to characterize the geometric properties of a space from an acoustic impulse response measured within it. This can be thought of as the inverse problem to the common practice of obtaining impulse responses from either a real-world or a virtual space. Starting from a measured or synthesized impulse response in an original scene, the method described here defines a space of possible scenes and a distance measure on it, and discusses a strategy to select a scene from this space, which is perceptually as close as possible to the original one. Potential applications of this novel method include audio forensics, re-equalization and re-mixing of music and audio.
-  url: "http://www.20203dmedia.eu/materials/papers/SCENE_GEOMETRY.pdf"
+  url: http://www.20203dmedia.eu/materials/papers/SCENE_GEOMETRY.pdf
 -
-  author: "Bailer, W. Arumi, P. Mateos, T. Garriga, A. Durany, J. and Garcia, D."
-  title: "Estimating 3D Camera Motion for Rendering Audio in Virtual Scenes"
+  author: Bailer, W. Arumi, P. Mateos, T. Garriga, A. Durany, J. and Garcia, D.
+  title: Estimating 3D Camera Motion for Rendering Audio in Virtual Scenes
   year: "2009"
-  notes: "5th European Conference on Visual Media Production, 2008."
+  notes: 5th European Conference on Visual Media Production, 2008.
   abstract: |
     In the production phase of digital cinema content it is important to allow the director not only to preview the final rendered scene early in the shooting process, but also to prehear the 5.1 surround and HRTF-based binaural versions, thus enabling visual and auditive artistic decisions to be taken at the shooting stage. In many cases camera tracking data is not available for all cameras on the set (e.g. handheld ones) and thus the motion of the camera needs to be estimated. In this paper we describe an approach for estimation of 3D camera motion and its use for real-time audio rendering.
 -
-  author: "Jun Wang, Xavier Amatriain, David Garcia Garzón, Jinlin Wang"
-  title: "Combining multi-level audio descriptors via web identification and aggregation"
+  author: Jun Wang, Xavier Amatriain, David Garcia Garzón, Jinlin Wang
+  title: Combining multi-level audio descriptors via web identification and aggregation
   year: "2009"
-  notes: "Presented at World Wide Web Conference'09, Developers Track, Madrid"
+  notes: Presented at World Wide Web Conference'09, Developers Track, Madrid
   abstract: |
     In this paper, we present the CLAM Aggregator, a tool included in the CLAM framework that allows combining multi-level audio descriptors. The tool includes a reliable method to identify the user’s local music collection using open data resources and allows users to configure, aggregate and edit music information ranging from low-level descriptors to any metadata from the semantic Web. All these steps are designed in a flexible, graphical, and user-adaptive way.
-  url: "http://xavier.amatriain.net/pubs/wang_www09.pdf"
+  url: http://xavier.amatriain.net/pubs/wang_www09.pdf
 -
-  author: "P. Arumi, D. Garcia, T. Mateos, A. Garriga and J. Durany."
-  title: "Real-time 3D audio for digital cinema"
+  author: P. Arumi, D. Garcia, T. Mateos, A. Garriga and J. Durany.
+  title: Real-time 3D audio for digital cinema
   year: "2008"
-  notes: "ASA Conference ACOUSTICS'08 Paris."
+  notes: ASA Conference ACOUSTICS'08 Paris.
   abstract: |
     We present a real-time 3D audio system with a number of nice features: it is suited for plausible reference with the visual environment, it is real-time capable, it can process multiple moving sound sources and listeners in a normal CPU. In our approach, a database of pressure and velocities impulse-responses (IRs) is computed offline for each (architectural) environment using physically based ray-tracing techniques. During playback, the real-time system retrieves IRs corresponding to the sources and target positions, performs a low-latency partitioned convolution and smoothes IR transitions with cross-fades. Finally, the system is flexible enough to decode to any surround exhibition setup. The software has been developed within the CLAM open-source audio framework. We present a real scenario where these techniques were successfully applied: an augmented-reality film with 3D audio within the context of the IP-RACINE project for digital cinema. The shooting was done with a high-end prototype camera with zoom and position tracking which enabled the real-time motion of a subjective listener within the scene. Our technology enabled the film director to both pre-hear surround audio of an augmented-reality scene shooting and fine-tune audio rendering in post-production.
-  slides: "http://www.20203dmedia.eu/materials/papers/slides_acoustics08_realtime.pdf"
+  slides: http://www.20203dmedia.eu/materials/papers/slides_acoustics08_realtime.pdf
 -
-  author: "Garcia, D."
-  title: "Visual Prototyping of Audio Applications"
+  author: Garcia, D.
+  title: Visual Prototyping of Audio Applications
   year: "2007"
   notes: "Master Thesis, Master Program in Information, Communication and Audiovisual Media. Advisors: Xavier Serra and Xavier Amatriain. Department of Information and Communication Technologies, Universitat Pompeu Fabra. Barcelona, September 2007."
 -
@@ -521,7 +522,7 @@ portfolio:
 #    A compilation of most of the material elaborated for the courses I teach.
 -
   title: WiKo (The wiki compiler)
-  url: 'http://wiko.sourceforge.net'
+  url: http://wiko.sourceforge.net
   description: >-
     It is a Python script to generate webs, scientific articles and blogs from files in wiki format. 
     I developed this tool to ease the maintaining of my own web sites.
