@@ -3,10 +3,16 @@
 
 class Encoder :
 	"""Encodes strings in a structure of dictionary like objects and sequences"""
-	def escape(self, object) :
-		if isinstance(object, str) : return self.escapeString(object)
-		if isinstance(object, dict) : return self.escapeDict(object)
-		return self.escapeSeq(object)
+	def escape(self, obj) :
+		if isinstance(obj, type(u'')):
+			return self.escapeString(obj)
+		if isinstance(obj, str):
+			return self.escapeString(obj)
+		if isinstance(obj, dict):
+			return self.escapeDict(obj)
+		if isinstance(obj, (list, tuple)):
+			return self.escapeSeq(obj)
+		raise Exception("unexpected type {}".format(type(obj)))
 
 	def escapeSeq(self, seq) :
 		return [self.escape(s) for s in  seq]
@@ -18,7 +24,7 @@ class Encoder :
 				for key, value in input.items()) )
 
 	def unicode(self, string) :
-		if hasattr(string, 'encode'):
+		if type(string) == type(u''):
 			return string
 		return string.decode("utf8")
 
@@ -114,6 +120,20 @@ class Vitae(ConstrainedDict) :
 				),
 			**params
 			)
+
+	@staticmethod
+	def fromYamlFile(filename):
+		from yamlns import namespace as ns
+		data = ns.load(filename)
+		data.positions = [Position(**item) for item in data.positions]
+		data.educations = [Education(**item) for item in data.educations]
+		data.publications = [Publication(**item) for item in data.publications]
+		data.portfolio = [Work(**item) for item in data.portfolio]
+		data.courses = [Course(**item) for item in data.courses]
+		data.awards = [Award(**item) for item in data.awards]
+		data.skills = [item for item in data.skills.items()]
+		return  Vitae(**data)
+
 
 class Position(ConstrainedDict) :
 	def __init__(self, **params) :
