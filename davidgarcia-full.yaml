@@ -65,8 +65,6 @@ positions:
     managing multiple sources of priorities in an horizontal organization
     working with a plethora of Python and Javascript technologies:
     OpenERP, Flask, Django, Angular, Mithril, Bootstrap, MDW, Asterisk...
-
-
 -
   company: GuifiBaix SCCL
   title: Founder and partner
@@ -77,8 +75,6 @@ positions:
     Web application development (P2P, Cloud services, streaming...).
     Programming bussiness logic.
 #    Won special mention as Best Enterprise Project 2013 at Prat de Llobregat.
-
-
 -
   company: CLAM (C++ Library for Audio and Music)
   title: Core developer
@@ -290,11 +286,11 @@ awards:
   position: Special Mention
   contest: Best idea or project 2014, Ajuntament del Prat de Llobregat
   work: GuifiBaix business plan
--
-  year: "2009"
-  position: Outstanding results
-  contest: Pilot Bologna Plan Course Migration at UPF
-  work: Software Engineering I
+#-
+#  year: "2009"
+#  position: Outstanding results
+#  contest: Pilot Bologna Plan Course Migration at UPF
+#  work: Software Engineering I
 -
   year: "2006"
   position: Winner

@@ -4,6 +4,7 @@
 import unittest
 from vitae import HtmlEncoder, ConstrainedDict
 
+
 class HtmlEncoderTest(unittest.TestCase) :
 	
 	def helper_test_escapeString(self, input, expected) :
