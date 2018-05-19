@@ -33,7 +33,7 @@ class ConstrainedDictTest(unittest.TestCase) :
 			requiredFields = ["required"],
 			required = "a value",
 			)
-		self.assertEquals( dict(
+		self.assertEqual( dict(
 				required="a value"
 			), d)
 
@@ -44,7 +44,7 @@ class ConstrainedDictTest(unittest.TestCase) :
 			requiredFields = ["required"],
 			required = "a value",
 			)
-		self.assertEquals( "a value", d.required)
+		self.assertEqual( "a value", d.required)
 
 	def test_optionalParameter_notGivenGetsDefault(self) :
 		d = ConstrainedDict( 
@@ -52,7 +52,7 @@ class ConstrainedDictTest(unittest.TestCase) :
 			defaultValues = dict(
 				defaultValuedParameter = "default value",
 			))
-		self.assertEquals(dict(
+		self.assertEqual(dict(
 			defaultValuedParameter="default value",
 			), d)
 
@@ -65,7 +65,7 @@ class ConstrainedDictTest(unittest.TestCase) :
 				),
 			defaultValuedParameter = "given value",
 			)
-		self.assertEquals(dict(
+		self.assertEqual(dict(
 			defaultValuedParameter="given value",
 			), d)
 
@@ -75,7 +75,7 @@ class ConstrainedDictTest(unittest.TestCase) :
 			d.alien
 			self.fail("Exception expected")
 		except AttributeError as e :
-			self.assertEquals(
+			self.assertEqual(
 				"'ConstrainedDict' object has no attribute 'alien'"
 				, str(e))
 
@@ -85,7 +85,7 @@ class ConstrainedDictTest(unittest.TestCase) :
 			d['alien']
 			self.fail("Exception expected")
 		except KeyError as e :
-			self.assertEquals(
+			self.assertEqual(
 				"'alien'"
 				, str(e))
 
@@ -96,7 +96,7 @@ class ConstrainedDictTest(unittest.TestCase) :
 			d.alien = "value"
 			self.fail("Exception expected")
 		except AttributeError as e :
-			self.assertEquals(
+			self.assertEqual(
 				"'ConstrainedDict' object has no attribute 'alien'"
 				, str(e))
 
@@ -107,7 +107,7 @@ class ConstrainedDictTest(unittest.TestCase) :
 			d['alien'] = "value"
 			self.fail("Exception expected")
 		except KeyError as e :
-			self.assertEquals(
+			self.assertEqual(
 				"'alien'"
 				, str(e))
 
@@ -154,7 +154,7 @@ class ConstrainedDictTest(unittest.TestCase) :
 			defaultValuedParameter = "given value",
 			)
 		del d.defaultValuedParameter
-		self.assertEquals(dict(
+		self.assertEqual(dict(
 			defaultValuedParameter="default value",
 			), d)
 
@@ -169,7 +169,7 @@ class ConstrainedDictTest(unittest.TestCase) :
 			defaultValuedParameter = "given value",
 			)
 		del d['defaultValuedParameter']
-		self.assertEquals(dict(
+		self.assertEqual(dict(
 			defaultValuedParameter="default value",
 			), d)
 
@@ -193,7 +193,7 @@ class ConcreteConstrainedDictTest(unittest.TestCase) :
 			optional1="value3",
 			optional2="value4",
 			)
-		self.assertEquals(dict(
+		self.assertEqual(dict(
 			mandatory1="value1",
 			mandatory2="value2",
 			optional1="value3",
@@ -205,7 +205,7 @@ class ConcreteConstrainedDictTest(unittest.TestCase) :
 			mandatory2="value2",
 			optional2="value4",
 			)
-		self.assertEquals(dict(
+		self.assertEqual(dict(
 			mandatory1="value1",
 			mandatory2="value2",
 			optional1="default1",
