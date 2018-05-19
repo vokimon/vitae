@@ -3,7 +3,7 @@
 
 from vitae import Vitae, Position, Education, Publication, Work, Course, Award
 from yamlns import namespace as ns
-import vitae, os, codecs
+import vitae, os, codecs, sys
 
 def fromYamlFile(filename):
 	data = ns.load(filename)
@@ -16,7 +16,7 @@ def fromYamlFile(filename):
 	data.skills = [item for item in data.skills.items()]
 	return  Vitae(**data)
 
-outputbase = os.path.splitext(__file__)[0]
+outputbase = os.path.splitext(sys.argv[1])[0]
 myVitae = fromYamlFile('{}.yaml'.format(outputbase))
 
 codecs.open("%s.html"%outputbase,"w", encoding="utf8").write(myVitae.html())
