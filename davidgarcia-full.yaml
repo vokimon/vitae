@@ -509,18 +509,18 @@ portfolio:
     an SConstruct tool to support Qt4,
     an UML Use Case diagram generator,
     a continuous integration efficiency tracker...
+#-
+#  title: Course materials
+#  url: http://canvoki.net/docencia.html
+#  description: >-
+#    A compilation of most of the material elaborated for the courses I teach.
 -
-  title: "Course materials"
-  url: "http://canvoki.net/docencia.html"
-  description: >-
-    A compilation of most of the material elaborated for the courses I teach.
--
-  title: "Personal GitHub page"
-  url: "http://github.com/vokimon"
+  title: Personal GitHub page
+  url: http://github.com/vokimon
   description: >-
     Several projects I maintain in GitHub and public contributions to other projects hosted there.
 -
-  title: 'WiKo (The wiki compiler)'
+  title: WiKo (The wiki compiler)
   url: 'http://wiko.sourceforge.net'
   description: >-
     It is a Python script to generate webs, scientific articles and blogs from files in wiki format. 
@@ -530,8 +530,8 @@ portfolio:
     Some nice features are: produces multiple output (pdf/html) from a single input (wiki),
     supports BiBTeX and LaTeX formulae, imports blogs from blogger, generates image galleries...
 -
-  title: 'TestFarm'
-  url: 'https://github.com/clam-project/testfarm'
+  title: TestFarm
+  url: https://github.com/clam-project/testfarm
   description: >-
     TestFarm is a client server system for continous integration.
     It can be thought as a BuilBot alternative,
@@ -540,8 +540,8 @@ portfolio:
     I have been mantaining it and in 2012 I did a deep rewrite for 2.0 version.
     
 #-
-#  title: 'CeView'
-#  url: 'http://www.cardse.com'
+#  title: CeView
+#  url: http://www.cardse.com
 #  description: >-
 #    A product I developed when I was working on Cards Engineering.
 #    It is a web based collaborative application to share and annotate CAD files from several TDM-like systems.
@@ -549,16 +549,16 @@ portfolio:
 #    to meet agile development requirements.
 #    The system was successfully implanted on Ford Ibérica, CASA, and Metro de Madrid.
 -
-  title: 'PyVitae'
-  url: "https://github.com/vokimon/vitae"
+  title: PyVitae
+  url: https://github.com/vokimon/vitae
   description: >-
     PyVitae is a python script to define curriculum vitae using a simple 
     text based syntax and generating several outputs including html and pdf.
     Like WiKo, it follows a write-once-generate-many principle.
     This curriculum has been generated using it.
 -
-  title: "Bioscena"
-  url: "https://github.com/vokimon/bioscena"
+  title: Bioscena
+  url: https://github.com/vokimon/bioscena
   description: >-
     A computer simulation of evolutive biological systems developed as my Technical Engineering Project.
     A multiplatform implementation in C++, highly configurable to simulate
