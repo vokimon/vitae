@@ -10,8 +10,8 @@ class ConstrainedDictTest(unittest.TestCase) :
 					unexpected="value",
 				)
 			self.fail("Exception expected")
-		except ConstrainedDict.UnsupportedParameter, e :
-			self.assertEquals(
+		except ConstrainedDict.UnsupportedParameter as e :
+			self.assertEqual(
 				"Unsuported parameter 'unexpected' in 'ConstrainedDict'"
 				, str(e))
 
@@ -21,8 +21,8 @@ class ConstrainedDictTest(unittest.TestCase) :
 				requiredFields = ["required"],
 				)
 			self.fail("Exception expected")
-		except ConstrainedDict.MissingRequiredParameter, e :
-			self.assertEquals(
+		except ConstrainedDict.MissingRequiredParameter as e :
+			self.assertEqual(
 				"Missing required parameter 'required' in 'ConstrainedDict'"
 				, str(e))
 
@@ -122,8 +122,8 @@ class ConstrainedDictTest(unittest.TestCase) :
 		try:
 			del d.required
 			self.fail("Exception expected")
-		except ConstrainedDict.MissingRequiredParameter, e :
-			self.assertEquals(
+		except ConstrainedDict.MissingRequiredParameter as e :
+			self.assertEqual(
 				"Missing required parameter 'required' in 'ConstrainedDict'"
 				, str(e))
 
@@ -138,8 +138,8 @@ class ConstrainedDictTest(unittest.TestCase) :
 		try:
 			del d['required']
 			self.fail("Exception expected")
-		except ConstrainedDict.MissingRequiredParameter, e :
-			self.assertEquals(
+		except ConstrainedDict.MissingRequiredParameter as e :
+			self.assertEqual(
 				"Missing required parameter 'required' in 'ConstrainedDict'"
 				, str(e))
 
@@ -219,8 +219,8 @@ class ConcreteConstrainedDictTest(unittest.TestCase) :
 				optional2="value4",
 				)
 			self.fail("exception expected")
-		except ConstrainedDict.MissingRequiredParameter, e :
-			self.assertEquals(
+		except ConstrainedDict.MissingRequiredParameter as e :
+			self.assertEqual(
 				"Missing required parameter 'mandatory2' in 'TestDict'"
 				, str(e))
 
@@ -234,8 +234,8 @@ class ConcreteConstrainedDictTest(unittest.TestCase) :
 				optional2="value4",
 				)
 			self.fail("exception expected")
-		except ConstrainedDict.UnsupportedParameter, e :
-			self.assertEquals(
+		except ConstrainedDict.UnsupportedParameter as e :
+			self.assertEqual(
 				"Unsuported parameter 'unexpected' in 'TestDict'"
 				, str(e))
 
