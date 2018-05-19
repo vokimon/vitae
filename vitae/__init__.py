@@ -9,7 +9,7 @@ class Encoder :
 		return self.escapeSeq(object)
 
 	def escapeSeq(self, seq) :
-		return map(self.escape, seq)
+		return [self.escape(s) for s in  seq]
 
 	def escapeDict(self, input) :
 		return input.__class__(
