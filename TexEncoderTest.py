@@ -8,8 +8,8 @@ class TexEncoderTest(unittest.TestCase) :
 	
 	def helper_test_escapeString(self, input, expected) :
 		result = TexEncoder().escapeString(input)
-		self.assertEquals(expected.__class__, result.__class__)
-		self.assertEquals(expected, result)
+		self.assertEqual(expected.__class__, result.__class__)
+		self.assertEqual(expected, result)
 
 	def test_escapeString_unicodeString(self) :
 		self.helper_test_escapeString(
@@ -58,8 +58,8 @@ class TexEncoderTest(unittest.TestCase) :
 
 	def helper_test_escapeDict(self, input, expected) :
 		actual = TexEncoder().escapeDict(input)
-		self.assertEquals(expected, actual)
-		self.assertEquals(expected.__class__, actual.__class__)
+		self.assertEqual(expected, actual)
+		self.assertEqual(expected.__class__, actual.__class__)
 
 	def test_escapeDict_withAllStrings(self) :
 		self.helper_test_escapeDict(
@@ -72,8 +72,8 @@ class TexEncoderTest(unittest.TestCase) :
 				)
 	def helper_test_escapeSeq(self, input, expected) :
 		actual = TexEncoder().escapeSeq(input)
-		self.assertEquals(expected, actual)
-		self.assertEquals(expected.__class__, actual.__class__)
+		self.assertEqual(expected, actual)
+		self.assertEqual(expected.__class__, actual.__class__)
 
 
 	def test_escapeSeq_turnsUnicode(self) :
@@ -90,8 +90,8 @@ class TexEncoderTest(unittest.TestCase) :
 
 	def helper_test_escape(self, input, expected) :
 		actual = TexEncoder().escape(input)
-		self.assertEquals(expected, actual)
-		self.assertEquals(expected.__class__, actual.__class__)
+		self.assertEqual(expected, actual)
+		self.assertEqual(expected.__class__, actual.__class__)
 
 	def test_escape_whenGivenAString(self) :
 		self.helper_test_escape(
