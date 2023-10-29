@@ -6,32 +6,26 @@ birthDate: 10th May 1975, Barcelona, Spain
 nationality: Spain
 contactEmail: david.garcia at upf.edu
 summary: |
-  I've been for a decade a profesor and a researcher on Audio and Music Software Engineering
-  and an specialist in Agile and Free/Libre Open Source Software Development methods.
-  I have been teaching mostly at Universitat Pompeu Fabra, but also other universities, an activity that I enjoy a lot.
-  Currently I am involved in several cooperatives of the Social Economy,
-  currently working at Som Energia and GuifiBaix SCCL,
-  a local Guifi.net deployer.
-  I also have many contacts and bounds to many other entities such as
-  Som Connexio, Som Mobilitat, Mes Opcions, Coop57, Pam a Pam...
-  
-  Although my formal education is mostly technical, my interests go on a wide range of topics
-  from Biology and Physics to Politics, History, Economy and Philosophy.
-  Indeed I have been always interested the social part of Computer Science,
-  Free Software communities, its internal dynamics, and
-  their struggle to reach the masses in rivalry with powerfull monopolies.
-  Since the 15M upraising in Barcelona, I decided to focus my efforts
-  on constructing, supporting and promoting social economy iniciatives
-  applying lessons learnt in the software community and, indeed learning a lot.
+  I was profesor at Universitat Pompeu Fabra and others institutions for a decade,
+  teaching Software Engineering and Free/Libre Open Source Software Development methods.
+  As researcher i was specialized in domains like Audio Software Engineering, 3D Acoustics and Music Information Retrieval.
+  Some research topics I faced were:
 
-#  I am a researcher specialized in domains like 3D Acoustics, Music Information Retrieval and Audio Software Engineering.
-#  My current research is related to 3D Acoustics.
-#  Some research topics I recently faced are:
-#  Chord extraction
-#  visual prototyping of audio applications
-#  real-time convolution
-#  3D virtual scenario acoustics simulation
-#  binaural reproduction of acoustic environments...
+
+
+  Chord extraction,
+  visual prototyping of audio applications,
+  real-time convolution,
+  and 3D acoustics rendering.
+
+  In 2013 I decided to turn into the Social Economy,
+  first starting up GuifiBaix SCCL, a local Guifi.net deployer,
+  and then working at Som energia SCCL were we deployed an IT team
+  from scratch to the current 25 people.
+
+  I also expanded my education and interests beyond the technical covering topics as wide as
+  Biology, Physics, Politics, History, Economy and Philosophy.
+
 #  I also have a long software development experience on desktop, web and server applications, and related to audio and multimedia.
 #  I have strong experience using agile methodologies and open source tools and methods.
 #  Some technologies I recently hacked with are Qt, C++, Python, Django, PHP, SCons, JACK, ALSA, PortAudio, Linux, bash, OpenGL...
@@ -39,15 +33,15 @@ summary: |
 #  an activity I enjoy a lot, and I like to innovate about.
 
 interests:
-- Cooperativism and Social Economy
+- Social Economy and Cooperativism
+- Free and Open Source Software
+- Agile Software Project Management
+- Teaching
 - Music software engineering
 - Music information retrieval
 - 3D acoustics simulation
 - 3D audio production and playback
 - Emergent evolutionary systems
-- Free and Open Source Software
-- Agile Software Project Management
-- Teaching
 
 languages:
   spanish: Native speaker
@@ -180,6 +174,18 @@ positions:
 
 educations:
 -
+  school: Universitat de Barcelona
+  degree: Course
+  field: Social Economy Disemination
+  start: "2020"
+  end: "2021"
+-
+  school: Barcelona School of Management
+  degree: Postgraduate
+  field: Technopolitics and Rights in the Digital Era
+  start: "2018"
+  end: "2019"
+-
   school: Universitat Pompeu Fabra
   degree: PhD
   field: Information, Communication and Audiovisual Media Technologies
@@ -300,23 +306,23 @@ awards:
 skills:
   Programming Languages: |
         I have a deep knowledge on programming and scripting languages
-        such  as C++, Python, PHP, Smalltallk, Java and Bash.
+        such  as Python, C++, Javascript, PHP, Smalltallk, Java and Bash.
   Desktop/Mobile Programming: |
         I am quite a fan of Qt technologies for building user interfaces.
         I also have used the lesser Tcl/Tk, Gtk and Fltk.
   Web Programming: |
-        I am experienced with HTML5/CSS3, XML, XPath, XSD, JSON, YAML... standards.
-        I worked with different Javascript frontend frameworks such as JQuery, Mithril, Angular, React...
-        I am experienced with backend programming, both in PHP and Python using frameworks such as Flask and Django.
+        I keep track of most web related standards since 1995:
+        HTML/CSS, XML, XPath, XSD, JSON, YAML...
+        I worked with different Javascript frontend frameworks such as React, JQuery, Mithril, Angular...
+        I am experienced with backend programming, both in PHP and Python using frameworks such as FastAPI, Flask and Django.
         I managed basicly and deployed apps on Apache, Nginx and uWSGI.
   Operating systems: |
         I've been working with several Linux flavors, mostly with Debian, SuSe, Fedora and Ubuntu.
         I tend to forget anything I learnt about Windows, but I could manage to make it work when needed.
         I just have very slight knowledge of MacOsX, just what I needed to barely have my Qt/POSIX apps working on it.
   Databases: |
-        I am an experienced SQL programmer.
-        I have used ORM's such as ADOdb, DAO, ODBC, PonyORM, SQLAlchemy.
-        I have experience administrating MySql and Postgresql databases.
+        I am an experienced SQL programmer using it directly o thru ORM's.
+        I have basic experience administrating MySql and Postgresql databases.
         I have theoretical knowledge on the internal implementation of distributed database managers.
   Networks: |
         I have been messing with the Guifi.net project dealing with routers, wireless antennas, IP6 and qMp (mesh configurations).
@@ -489,6 +495,11 @@ publications:
 
 portfolio:
 -
+  title: Personal GitHub page
+  url: http://github.com/vokimon
+  description: >-
+    My later public contributions are mostly hosted in Github
+-
   title: My technical blog and web page
   url: http://canvoki.net/coder
   description: >-
@@ -498,11 +509,6 @@ portfolio:
     an SConstruct tool to support Qt4,
     an UML Use Case diagram generator,
     a continuous integration efficiency tracker...
--
-  title: Personal GitHub page
-  url: http://github.com/vokimon
-  description: >-
-    Several projects I maintain in GitHub and public contributions to other projects hosted there.
 -
   title: CLAM (C++ Library of Audio and Music)
   url: http://clam-project.org
@@ -516,16 +522,16 @@ portfolio:
 #  url: http://canvoki.net/docencia.html
 #  description: >-
 #    A compilation of most of the material elaborated for the courses I teach.
--
-  title: WiKo (The wiki compiler)
-  url: http://wiko.sourceforge.net
-  description: >-
-    It is a Python script to generate webs, scientific articles and blogs from files in wiki format. 
-    I developed this tool to ease the maintaining of my own web sites.
-    Since them it has become a community project at sourceforge
-    and we have successfully used it in several projects I was involved in.
-    Some nice features are: produces multiple output (pdf/html) from a single input (wiki),
-    supports BiBTeX and LaTeX formulae, imports blogs from blogger, generates image galleries...
+#-
+#  title: WiKo (The wiki compiler)
+#  url: http://wiko.sourceforge.net
+#  description: >-
+#    It is a Python script to generate webs, scientific articles and blogs from files in wiki format. 
+#    I developed this tool to ease the maintaining of my own web sites.
+#    Since them it has become a community project at sourceforge
+#    and we have successfully used it in several projects I was involved in.
+#    Some nice features are: produces multiple output (pdf/html) from a single input (wiki),
+#    supports BiBTeX and LaTeX formulae, imports blogs from blogger, generates image galleries...
 -
   title: TestFarm
   url: https://github.com/clam-project/testfarm
