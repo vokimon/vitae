@@ -1,36 +1,32 @@
 firstName: David
 surname: García Garzón
-photo: http://canvoki.net/bichos-low.png
+photo: http://canvoki.net/images/bichos-low.png
 profession: Researcher and Computer Engineer
 birthDate: 10th May 1975, Barcelona, Spain
 nationality: Spain
-contactEmail: david.garcia at upf.edu
+contactEmail: voki at canvoki dot net
 summary: |
+  I have a wide experience developing software on desktop, web and server applications, and related to audio and multimedia,
+  all using agile methodologies, testing and open source tools and methods.
+  Some technologies I recently used are Python, Qt, Kotlin, React, FastApi, C++, Odoo...
+
   I was profesor at Universitat Pompeu Fabra and others institutions for a decade,
   teaching Software Engineering and Free/Libre Open Source Software Development methods.
   As researcher i was specialized in domains like Audio Software Engineering, 3D Acoustics and Music Information Retrieval.
   Some research topics I faced were:
-
-
-
   Chord extraction,
   visual prototyping of audio applications,
   real-time convolution,
   and 3D acoustics rendering.
 
-  In 2013 I decided to turn into the Social Economy,
+  Then, in 2013 I decided to turn into the Social Economy,
   first starting up GuifiBaix SCCL, a local Guifi.net deployer,
   and then working at Som energia SCCL were we deployed an IT team
-  from scratch to the current 25 people.
+  from scratch to the current 25 people, innovating on organization technics.
 
-  I also expanded my education and interests beyond the technical covering topics as wide as
-  Biology, Physics, Politics, History, Economy and Philosophy.
-
-#  I also have a long software development experience on desktop, web and server applications, and related to audio and multimedia.
-#  I have strong experience using agile methodologies and open source tools and methods.
-#  Some technologies I recently hacked with are Qt, C++, Python, Django, PHP, SCons, JACK, ALSA, PortAudio, Linux, bash, OpenGL...
-#  I have been teaching, mostly to higher school students, since 1995
-#  an activity I enjoy a lot, and I like to innovate about.
+  I am also not enclosed to IT topics, I expanded my education and interests
+  covering topics as wide as
+  Biology, Physics, Politics, History, Economy, Art and Philosophy.
 
 interests:
 - Social Economy and Cooperativism
@@ -53,6 +49,7 @@ positions:
   company: Som Energia SCCL
   title: Developer
   start: Jan 2015
+  end: Nov 2024
   description: |
     Creating and organizing an agile IT team nearly from scratch
     dealing and coordinating multiple external partners
@@ -173,6 +170,12 @@ positions:
     Adapting a Genetic Algorithms tool to solve permutation problems (TSP).
 
 educations:
+-
+  school: Escola JOSO
+  degree: Course
+  field: Blender 3D modeling for illustrators
+  start: "2025"
+  end: "2025"
 -
   school: Universitat de Barcelona
   degree: Course
@@ -306,10 +309,11 @@ awards:
 skills:
   Programming Languages: |
         I have a deep knowledge on programming and scripting languages
-        such  as Python, C++, Javascript, PHP, Smalltallk, Java and Bash.
+        such  as Python, C++, Javascript, Kotlin, PHP, Smalltallk, Java and Bash.
   Desktop/Mobile Programming: |
         I am quite a fan of Qt technologies for building user interfaces.
-        I also have used the lesser Tcl/Tk, Gtk and Fltk.
+        I also used MUI (React) and Compose (Android/Kotlin).
+        I also have used less Tcl/Tk, Gtk and Fltk.
   Web Programming: |
         I keep track of most web related standards since 1995:
         HTML/CSS, XML, XPath, XSD, JSON, YAML...
@@ -337,12 +341,11 @@ skills:
   3D Programming: |
         I have experience programing the OpenGL API.
         I experience on programming raster, shading and texturization routines.
-        I have some notions on modeling and animating scenes.
-        I have experience on modeling languages such as PovRay.
+        I did some basic programming in Godot and shaders.
   Art/Design: |
-        I have experience using Gimp (PaintShop equivalent) and Inkscape (Freehand/Illustrator equivalent).
+        I have experience using Gimp (PaintShop equivalent), Inkscape (Freehand/Illustrator equivalent) and Krita (Clip Studio equivalent).
         I used them for both artistic and professional purposes.
-        Bare notions of Blender (3D Animation).
+        Basic modeling and texturing using Blender (3D Animation).
 #  Mobile/Embedded:
 #       This is a field on which I am currently self-training.
 #       I developed some applications for Android using the Qt framework (C++ and QML).
@@ -517,6 +520,27 @@ portfolio:
     in most of the aspects of that awarded free software project:
     XML support, GUI, audio back-end's, architecture, reflection,
     processing algorithms, quality assurance...
+
+-
+  title: Carburoid
+  url: http://carburoid.canvoki.net
+  description: >-
+    An Open Source Android application to search gas stations.
+    I implemented it to learn Kotlin and in few months it has
+    become a mature and well engineered application with CI,
+    F-Droid distribution, automated web page generation and
+    a bunch of tools and shared components i am using to
+    fastly implement other Android applications.
+
+-
+  title: VokiBot
+  url: http://vokibot.canvoki.net
+  description: >-
+    An Open Source Android/Kotlin application to launch tasks on many triggering events.
+    Developed in kotlin, it deals with inter-application communication,
+    system discovery, Bluetooth...
+    Reuses many of the shared components and tools from Carburoid.
+
 #-
 #  title: Course materials
 #  url: http://canvoki.net/docencia.html
